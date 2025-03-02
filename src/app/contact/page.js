@@ -1,4 +1,5 @@
-export { notFound } from 'next/navigation';
+export { notFound } from "next/navigation";
+import { FaUniversity, FaPhone, FaEnvelope } from "react-icons/fa";
 
 export default function ContactPage() {
   return (
@@ -8,10 +9,24 @@ export default function ContactPage() {
         <div className="flex flex-col justify-center text-center ml-20 md:text-left">
           <h1 className="text-5xl font-bold text-[#191938]">Contact Us</h1>
           <p className="mt-2 text-gray-600">Get in touch with our team.</p>
+          <h2 className="text-3xl pt-5 text-[#191938]">
+            Dr. Nguyen Dinh Duc Nha
+          </h2>
 
           <div className="mt-6 space-y-4">
-            <p className="text-lg">Contact: (+84) 0369 7777 13</p>
-            <p className="text-lg">ndducnha@gmail.com | nha.ndd@vinuni.edu.vn</p>
+            <p className="text-lg flex items-center gap-2">
+              <FaUniversity size={35} />
+              VinUniversity, 4th Floor, Building I, VinUni Campus, Vinhomes
+              Ocean Park, Gia Lam Dist, Hanoi
+            </p>
+            <p className="text-lg flex items-center gap-2">
+              <FaPhone/>
+              Contact: (+84) 0369 7777 13
+            </p>
+            <p className="text-lg flex items-center gap-2">
+              <FaEnvelope/>
+              ndducnha@gmail.com | nha.ndd@vinuni.edu.vn
+            </p>
           </div>
         </div>
 
