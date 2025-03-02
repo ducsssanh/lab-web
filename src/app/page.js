@@ -1,4 +1,5 @@
 //import Image from "next/image";
+export { notFound } from 'next/navigation';
 
 export default function Home() {
   return (

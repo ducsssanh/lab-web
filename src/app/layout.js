@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // Import icons từ lucide-react
+export { notFound } from 'next/navigation';
 
 export default function Layout({ children }) {
   const [menuOpen, setMenuOpen] = useState(false);

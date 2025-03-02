@@ -1,3 +1,5 @@
+export { notFound } from 'next/navigation';
+
 export default function PeoplePage() {
     const members = [
         { name: "Professor Nha Nguyen", role: "Group Leader", img: "people/nha.jpg", about: "Dr. Nha Nguyen is the group leader with extensive experience in research and development." },
