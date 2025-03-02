@@ -40,13 +40,13 @@ export default function PeoplePage() {
             members: [
                 {
                     name: "Le Quoc Dung",
-                    role: "Graduate Researcher",
+                    role: "Master's student",
                     img: "people/LeQuocDung.jpg",
                     about: "Cryptography expert with a focus on symmetric key encryption and post-quantum security. Gold Medalist in NSUCRYPTO 2024."
                 },
                 {
                     name: "Nguyen Dinh Cuong",
-                    role: "Graduate Researcher",
+                    role: "Master's student",
                     img: "people/NguyenDinhCuong.jpg",
                     about: "Researcher in software and system security, automated program analysis, and binary security. Top contestant in CTFs and programming contests."
                 }
