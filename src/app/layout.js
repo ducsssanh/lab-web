@@ -82,12 +82,12 @@ export default function Layout({ children }) {
             </div>
             <div className="md:w-2/4 flex justify-around mt-6 md:mt-0">
               <ul className="space-y-2">
-                <li><a href="/" className="hover:underline">Home</a></li>
-                <li><a href="/people" className="hover:underline">People</a></li>
+                <li><Link href="/" className="hover:underline">Home</Link></li>
+                <li><Link href="/people" className="hover:underline">People</Link></li>
               </ul>
               <ul className="space-y-2">
-                <li><a href="/publications" className="hover:underline">Publications</a></li>
-                <li><a href="/contact" className="hover:underline">Contact</a></li>
+                <li><Link href="/publications" className="hover:underline">Publications</Link></li>
+                <li><Link href="/contact" className="hover:underline">Contact</Link></li>
               </ul>
             </div>
           </div>
