@@ -9,12 +9,19 @@ const teamMembers = {
     name: 'Dr. Dinh Duc Nha Nguyen',
     position: 'Principal Investigator, Founder | Assistant Professor, VinUniversity',
     imageUrl: '/people/nha.jpg',
-    description: `Specializing in Post-Quantum Cryptography (PQC), AI-driven cybersecurity, and IoT security. Advisor for PSI Testing and Certification, bridging research with real-world security applications.`,
-    website: 'https://ndducnha.github.io/my-website/',
+    description: `Dr. Dinh Duc Nha Nguyen (Tony/Nhã) is the Principal Investigator and Founder of VCyber Lab at VinUniversity, specializing in Post-Quantum Cryptography (PQC), AI-driven cybersecurity, and IoT & robotic security. His research focuses on developing next-generation cryptographic solutions, AI-powered cyber defense systems, and quantum-resilient security frameworks to address the evolving challenges of quantum computing, AI-driven cyber threats, and IoT vulnerabilities.
+
+Dr. Nguyen has extensive academic and industry experience, contributing to both high-impact research and real-world cybersecurity applications. He has published extensively in top-tier cybersecurity journals, collaborating with academic institutions and industry partners to advance quantum-safe cryptographic systems, intelligent security automation, and AI-driven threat detection. His work spans securing next-generation networks, enhancing privacy-preserving cryptography, and building autonomous cybersecurity solutions.
+
+In addition to his academic role, Dr. Nguyen serves as an Expert Advisor for PSI Testing and Certification Joint Stock Company (PSI), a leading organization in electrical-electronic product testing and certification in Vietnam. At PSI, he provides expertise in cybersecurity compliance, risk assessment, and secure system integration for telecommunications, industrial electronics, and lithium battery testing. His contributions help bridge academic research with practical cybersecurity implementations, ensuring compliance with international security standards.
+
+Dr. Nguyen is passionate about mentoring and leading research collaborations, working closely with students, researchers, and industry professionals to drive innovations in post-quantum cybersecurity, AI-enhanced defense mechanisms, and IoT security.
+`,
+    website: 'https://ducnha.work/',
   },
 
   // GRADUATE RESEARCHERS
-  'van-dong-bui-will-bui': {
+  'van-dong-bui': {
     name: 'Van Dong Bui (Will Bui)',
     position: 'Graduate Researcher',
     imageUrl: '/people/WillBui.jpg',
@@ -26,7 +33,7 @@ Will holds a Master’s in Cyber Security Analysis from Macquarie University, Au
 
 `,
   },
-  'mai-do-thi-ngoc-mia-do': {
+  'mai-do-thi-ngoc': {
     name: 'Mai Do Thi Ngoc (Mia Do)',
     position: 'Graduate Researcher',
     imageUrl: '/people/MiaDo.jpg',
@@ -37,6 +44,8 @@ Before joining VCyber Lab, she spent six years in telecommunications, working on
 She holds a Master’s degree in Telecommunications and is passionate about cyber defense, secure system development, and bridging cybersecurity principles with real-world applications.
 `,
   },
+
+  // MASTER'S STUDENTS
   'le-quoc-dung': {
     name: 'Lê Quốc Dũng',
     position: 'Graduate Researcher',
