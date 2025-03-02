@@ -3,110 +3,111 @@ export { notFound } from 'next/navigation';
 export default function PeoplePage() {
     const groups = [
         {
-            title: "PRINCIPAL INVESTIGATOR (PI) AND LAB DIRECTOR",
+            title: "PRINCIPAL INVESTIGATOR & FOUNDER",
             members: [
                 {
-                    name: "Professor Nha Nguyen",
-                    role: "Group Leader",
+                    name: "Dr. Dinh Duc Nha Nguyen",
+                    role: "Principal Investigator, Founder | Assistant Professor, VinUniversity",
                     img: "people/nha.jpg",
-                    about: "Dr. Nha Nguyen is the group leader with extensive experience in research and development, leading multiple groundbreaking projects in AI and cybersecurity."
-                }
-            ]
-        },
-        {
-            title: "MASTER'S STUDENT",
-            members: [
-                { 
-                    name: "Dũng", 
-                    role: "Master's Student", 
-                    img: "people/avatar.jpg", 
-                    about: "Master's student with research interest in data security, focusing on developing privacy-preserving algorithms for distributed systems."
+                    about: "Specializing in Post-Quantum Cryptography (PQC), AI-driven cybersecurity, and IoT security. Advisor for PSI Testing and Certification, bridging research with real-world security applications."
                 }
             ]
         },
         {
             title: "GRADUATE RESEARCHERS",
             members: [
-                { 
-                    name: "Mai", 
-                    role: "Graduate Researcher", 
-                    img: "people/avatar.jpg", 
-                    about: "Working on distributed systems and cloud computing, with a special interest in serverless architectures."
+                {
+                    name: "Van Dong Bui (Will Bui)",
+                    role: "Graduate Researcher",
+                    img: "people/WillBui.jpg",
+                    about: "Specialist in cyber threat intelligence, OSINT, and penetration testing. Senior Cybersecurity Analyst at Lynden Group, founder of 'Take Them Down' project."
                 },
-                { 
-                    name: "Đông", 
-                    role: "Graduate Researcher", 
-                    img: "people/avatar.jpg", 
-                    about: "Focused on bioinformatics and computational biology, leveraging machine learning for genomic data analysis."
+                {
+                    name: "Mai Do Thi Ngoc (Mia Do)",
+                    role: "Graduate Researcher",
+                    img: "people/miado.jpg",
+                    about: "Expert in network security and secure system architecture. 14 years of experience, CEH-certified, and part-time lecturer."
+                },
+                {
+                    name: "Lê Quốc Dũng",
+                    role: "Graduate Researcher",
+                    img: "people/LeQuocDung.jpg",
+                    about: "Cryptography expert with a focus on symmetric key encryption and post-quantum security. Gold Medalist in NSUCRYPTO 2024."
+                },
+                {
+                    name: "Nguyễn Đình Cường",
+                    role: "Graduate Researcher",
+                    img: "people/NguyenDinhCuong.jpg",
+                    about: "Researcher in software and system security, automated program analysis, and binary security. Top contestant in CTFs and programming contests."
                 }
             ]
         },
         {
             title: "RESEARCH ASSISTANTS",
             members: [
-                { 
-                    name: "Luffy", 
-                    role: "Research Assistant", 
-                    img: "people/avatar.jpg", 
-                    about: "Exploring blockchain technologies, researching consensus algorithms and decentralized applications."
+                {
+                    name: "Vũ Anh Lê (Luffy Le)",
+                    role: "Research Assistant",
+                    img: "people/LuffyLe.jpg",
+                    about: "Algorithm design and mathematical modeling expert, working on adversarial AI defense and quantum-resistant cryptographic protocols."
                 },
-                { 
-                    name: "Hoàng Anh", 
-                    role: "Research Assistant", 
-                    img: "people/NguyenHoangAnh.jpg", 
-                    about: "Cybersecurity specialist with hands-on experience in threat detection, penetration testing, and security audits."
+                {
+                    name: "Trần Đức Anh",
+                    role: "Research Assistant",
+                    img: "people/TranDucAnh.jpg",
+                    about: "Network security, vulnerability research, and malware analysis specialist with a focus on web security and Kubernetes/cloud security."
                 },
-                { 
-                    name: "Đức Anh", 
-                    role: "Research Assistant", 
-                    img: "people/avatar.jpg", 
-                    about: "Data analyst passionate about big data, developing advanced data visualization tools and predictive models."
+                {
+                    name: "Nguyễn Hoàng Anh",
+                    role: "Research Assistant",
+                    img: "people/NguyenHoangAnh.jpg",
+                    about: "Network security and cryptography expert with hands-on experience in threat intelligence and secure protocols."
                 },
-                { 
-                    name: "Khanh", 
-                    role: "Research Assistant", 
-                    img: "people/avatar.jpg", 
-                    about: "Cloud computing enthusiast, building scalable infrastructure solutions and optimizing Kubernetes deployments."
-                }
-            ]
-        },
-        {
-            title: "SCIENTIFIC ADVISORS",
-            members: [
-                { 
-                    name: "Lei Pan", 
-                    role: "Scientific Advisor", 
-                    img: "people/avatar.jpg", 
-                    about: "Expert in machine learning and algorithm optimization, mentoring research projects across various domains."
-                },
-                { 
-                    name: "Yong Xiang", 
-                    role: "Scientific Advisor", 
-                    img: "people/avatar.jpg", 
-                    about: "Leading researcher in network security and cryptography, pioneering work in secure communication protocols."
-                },
-                { 
-                    name: "Keshav", 
-                    role: "Scientific Advisor", 
-                    img: "people/avatar.jpg", 
-                    about: "Specialized in distributed systems and cloud architectures, advising on scalability and fault tolerance strategies."
+                {
+                    name: "Võ Hoàng Khanh",
+                    role: "Research Assistant",
+                    img: "people/VoHoangKhanh.jpg",
+                    about: "Enterprise cybersecurity expert, specializing in SIEM solutions, threat analytics, and AI-driven threat detection models."
                 }
             ]
         },
         {
             title: "COLLABORATORS",
             members: [
-                { 
-                    name: "Prof Dũng", 
-                    role: "Collaborator", 
-                    img: "people/avatar.jpg", 
-                    about: "Collaborating on AI-driven healthcare innovations, integrating deep learning models for patient diagnosis."
+                {
+                    name: "Dr. Le Duy Dung (Andrew)",
+                    role: "Collaborator | Assistant Professor, VinUniversity",
+                    img: "people/LeDuyDung.jpg",
+                    about: "AI-driven cybersecurity and federated learning researcher. Former Senior Data Scientist at Grab, published in top-tier AI conferences."
                 },
-                { 
-                    name: "Syed", 
-                    role: "Collaborator", 
-                    img: "people/avatar.jpg", 
-                    about: "Working on secure communications and encryption protocols, enhancing data privacy for IoT devices."
+                {
+                    name: "Dr. Keshav Sood",
+                    role: "Collaborator | Senior Lecturer, Deakin University",
+                    img: "people/KeshavSood.jpg",
+                    about: "Next-gen network security expert, researching SDN security and cyber resilience, with extensive editorial experience in IEEE journals."
+                },
+                {
+                    name: "Dr. Syed Wajid Ali Shah",
+                    role: "Collaborator | Research Fellow, Deakin Cyber Research and Innovation Centre",
+                    img: "people/AliShah.jpg",
+                    about: "Specialist in secure cloud computing, privacy-enhancing technologies, and AI-powered security solutions."
+                }
+            ]
+        },
+        {
+            title: "SCIENTIFIC ADVISORS",
+            members: [
+                {
+                    name: "Assoc. Prof. Lei Pan",
+                    role: "Scientific Advisor | Associate Professor, Deakin University",
+                    img: "people/leipan.jpg",
+                    about: "Leading researcher in Post-Quantum Cryptography and distributed computing security, working on quantum-resilient algorithms."
+                },
+                {
+                    name: "Prof. Yong Xiang",
+                    role: "Scientific Advisor | Professor of Network Engineering, Deakin University",
+                    img: "people/yongxiang.jpg",
+                    about: "Director of the Trustworthy Intelligent Computing Lab, with extensive publications and research on AI-driven cybersecurity and blockchain."
                 }
             ]
         }
@@ -116,20 +117,22 @@ export default function PeoplePage() {
         <div className="text-[#000022] py-10 pt-20 px-4">
             {groups.map((group, index) => (
                 <div key={index} className="mb-12">
-                    <h1 className="text-3xl font-bold mb-6">{group.title}</h1>
+                    <h1 className="text-4xl font-bold mb-6">{group.title}</h1>
                     <div className="grid md:grid-cols-2 gap-6">
                         {group.members.map((member, idx) => (
                             <div key={idx} className="flex items-center">
                                 <div className="flex items-start gap-6">
-                                    <img
-                                        src={member.img}
-                                        alt={member.name}
-                                        className="w-40 h-40 object-cover rounded-none border-4 border-gray-700"
-                                    />
+                                    <div className="w-32 h-32 flex-shrink-0">
+                                        <img
+                                            src={member.img}
+                                            alt={member.name}
+                                            className="w-full h-full object-cover rounded-lg border-4 border-gray-700"
+                                        />
+                                    </div>
                                     <div>
-                                        <h3 className="font-bold text-lg">{member.name}</h3>
-                                        <p className="italic">{member.role}</p>
-                                        <p className="text-gray-300">{member.about}</p>
+                                        <h3 className="font-bold text-2xl">{member.name}</h3>
+                                        <p className="text-lg text-gray-600 italic">{member.role}</p>
+                                        <p className="mt-2 text-black text-base leading-relaxed">{member.about}</p>
                                     </div>
                                 </div>
                             </div>
