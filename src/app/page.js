@@ -6,20 +6,20 @@ export default function Home() {
     <div className="text-left">
       {/* Hero Section */}
       <section
-        className="max-w-6xl mx-auto px-4 md:px-8 lg:px-16 aspect-[21/9] flex flex-col justify-center items-start relative"
+        className="mx-auto px-4 md:px-8 lg:px-16 aspect-[21/9] flex flex-col justify-center items-start relative"
         style={{ backgroundImage: "url('/background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', marginTop: "40px" }}
       >
       </section>
 
       {/* Content Section */}
       <section className="max-w-6xl mx-auto px-4 md:px-8 lg:px-16 py-8">
-        <h2 className="text-3xl font-semibold text-white text-center">
+        <h2 className="text-3xl font-semibold text-[#000022] text-center">
           Our Research Focus
         </h2>
           <div className="p-6 flex justify-between items-center">
             <div>
-              <h3 className="text-xl font-semibold text-white">Cybersecurity</h3>
-              <p className="text-white mt-2">
+              <h3 className="text-xl font-semibold ">Cybersecurity</h3>
+              <p className=" mt-2">
                 Exploring new methods to protect digital systems and networks.
               </p>
             </div>
@@ -27,8 +27,8 @@ export default function Home() {
           </div>
           <div className="p-6 flex justify-between items-center">
             <div>
-              <h3 className="text-xl font-semibold text-white">Cryptography</h3>
-              <p className="text-white mt-2">
+              <h3 className="text-xl font-semibold ">Cryptography</h3>
+              <p className=" mt-2">
                 Advancing encryption techniques for secure communication.
               </p>
             </div>
@@ -36,8 +36,8 @@ export default function Home() {
           </div>
           <div className="p-6 flex justify-between items-center">
             <div>
-              <h3 className="text-xl font-semibold text-white">Post-Quantum Cryptography</h3>
-              <p className="text-white mt-2">
+              <h3 className="text-xl font-semibold ">Post-Quantum Cryptography</h3>
+              <p className=" mt-2">
               Developing cryptographic algorithms that are secure against quantum computer attacks.
               </p>
             </div>

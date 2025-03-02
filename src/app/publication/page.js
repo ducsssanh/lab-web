@@ -44,24 +44,24 @@ export default function PublicationsPage() {
     ];
 
     return (
-        <div className=" text-white py-12 flex flex-col justify-center items-start">
-            <h1 className="text-3xl mx-auto font-bold">Publications</h1>
+        <div className=" text-[#000022] py-12 flex flex-col justify-center items-start">
+            <h1 className="text-3xl pt-40 mx-auto font-bold">Publications</h1>
 
             <div className="mt-6 mx-auto space-y-8">
                 {publications.map((section, index) => (
                     <div key={index}>
-                        <h2 className="text-2xl font-semibold text-gray-300">{section.year}</h2>
+                        <h2 className="text-2xl font-semibold text-[#000022]">{section.year}</h2>
                         <ul className="mt-2 space-y-4">
                             {section.papers.map((paper, idx) => (
                                 <li key={idx} className="border-l-4 border-gray-600 pl-4">
-                                    <h3 className="text-lg font-semibold text-gray-200 hover:underline">
+                                    <h3 className="text-lg font-semibold text-[#000022] hover:underline">
                                         <a href={paper.pdfLink}>{paper.title}</a>
                                     </h3>
                                     <p className="text-gray-400 text-sm">{paper.authors}</p>
                                     <p className="text-gray-500 italic">{paper.conference}</p>
                                     <div className="mt-1 space-x-3">
                                         {paper.pdfLink && (
-                                            <a href={paper.pdfLink} className="text-gray-400 hover:text-white">📄 PDF</a>
+                                            <a href={paper.pdfLink} className="text-[#c10000]">📄 PDF</a>
                                         )}
                                     </div>
                                 </li>
