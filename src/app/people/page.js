@@ -1,6 +1,8 @@
 export { notFound } from 'next/navigation';
 
 export default function PeoplePage() {
+    const generateSlug = (name) => name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+
     const groups = [
         {
             title: "PRINCIPAL INVESTIGATOR & FOUNDER",
@@ -25,17 +27,17 @@ export default function PeoplePage() {
                 {
                     name: "Mai Do Thi Ngoc (Mia Do)",
                     role: "Graduate Researcher",
-                    img: "people/miado.jpg",
+                    img: "people/MiaDo.jpg",
                     about: "Expert in network security and secure system architecture. 14 years of experience, CEH-certified, and part-time lecturer."
                 },
                 {
-                    name: "Lê Quốc Dũng",
+                    name: "Le Quoc Dung",
                     role: "Graduate Researcher",
                     img: "people/LeQuocDung.jpg",
                     about: "Cryptography expert with a focus on symmetric key encryption and post-quantum security. Gold Medalist in NSUCRYPTO 2024."
                 },
                 {
-                    name: "Nguyễn Đình Cường",
+                    name: "Nguyen Dinh Cuong",
                     role: "Graduate Researcher",
                     img: "people/NguyenDinhCuong.jpg",
                     about: "Researcher in software and system security, automated program analysis, and binary security. Top contestant in CTFs and programming contests."
@@ -46,25 +48,25 @@ export default function PeoplePage() {
             title: "RESEARCH ASSISTANTS",
             members: [
                 {
-                    name: "Vũ Anh Lê (Luffy Le)",
+                    name: "Vu Anh Le (Luffy Le)",
                     role: "Research Assistant",
                     img: "people/LuffyLe.jpg",
                     about: "Algorithm design and mathematical modeling expert, working on adversarial AI defense and quantum-resistant cryptographic protocols."
                 },
                 {
-                    name: "Trần Đức Anh",
+                    name: "Tran Duc Anh",
                     role: "Research Assistant",
                     img: "people/TranDucAnh.jpg",
                     about: "Network security, vulnerability research, and malware analysis specialist with a focus on web security and Kubernetes/cloud security."
                 },
                 {
-                    name: "Nguyễn Hoàng Anh",
+                    name: "Nguyen Hoang Anh",
                     role: "Research Assistant",
                     img: "people/NguyenHoangAnh.jpg",
                     about: "Network security and cryptography expert with hands-on experience in threat intelligence and secure protocols."
                 },
                 {
-                    name: "Võ Hoàng Khanh",
+                    name: "Vo Hoang Khanh",
                     role: "Research Assistant",
                     img: "people/VoHoangKhanh.jpg",
                     about: "Enterprise cybersecurity expert, specializing in SIEM solutions, threat analytics, and AI-driven threat detection models."
@@ -100,13 +102,13 @@ export default function PeoplePage() {
                 {
                     name: "Assoc. Prof. Lei Pan",
                     role: "Scientific Advisor | Associate Professor, Deakin University",
-                    img: "people/leipan.jpg",
+                    img: "people/LeiPan.jpg",
                     about: "Leading researcher in Post-Quantum Cryptography and distributed computing security, working on quantum-resilient algorithms."
                 },
                 {
                     name: "Prof. Yong Xiang",
                     role: "Scientific Advisor | Professor of Network Engineering, Deakin University",
-                    img: "people/yongxiang.jpg",
+                    img: "people/YongXiang.jpg",
                     about: "Director of the Trustworthy Intelligent Computing Lab, with extensive publications and research on AI-driven cybersecurity and blockchain."
                 }
             ]
@@ -130,7 +132,9 @@ export default function PeoplePage() {
                                         />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-2xl">{member.name}</h3>
+                                        <a href={`/people/${generateSlug(member.name)}`}>
+                                            <h3 className="font-bold text-2xl text-blue-600 hover:underline">{member.name}</h3>
+                                        </a>
                                         <p className="text-lg text-gray-600 italic">{member.role}</p>
                                         <p className="mt-2 text-black text-base leading-relaxed">{member.about}</p>
                                     </div>
