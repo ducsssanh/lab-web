@@ -113,7 +113,7 @@ export default function PeoplePage() {
     ];
 
     return (
-        <div className="text-white py-10 px-4">
+        <div className="text-[#000022] py-10 pt-20 px-4">
             {groups.map((group, index) => (
                 <div key={index} className="mb-12">
                     <h1 className="text-3xl font-bold mb-6">{group.title}</h1>

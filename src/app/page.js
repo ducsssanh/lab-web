@@ -6,8 +6,8 @@ export default function Home() {
     <div className="text-left">
       {/* Hero Section */}
       <section
-        className="mx-auto px-4 md:px-8 lg:px-16 aspect-[21/9] flex flex-col justify-center items-start relative"
-        style={{ backgroundImage: "url('/background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', marginTop: "40px" }}
+        className="mx-auto md:px-8 lg:px-16 aspect-[21/9] flex flex-col justify-center items-start relative"
+        style={{ backgroundImage: "url('/background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
       </section>
 

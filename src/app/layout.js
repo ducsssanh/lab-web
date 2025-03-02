@@ -8,38 +8,16 @@ export { notFound } from 'next/navigation';
 
 export default function Layout({ children }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
         {/* Navbar */}
-        <nav
-          className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-            isScrolled ? "bg-white shadow-md py-1" : "bg-white py-4"
-          } px-6`}
-        >
+        <nav className="fixed w-full top-0 z-50 bg-white px-6 shadow-md">
           <div className="max-w-6xl mx-auto flex justify-between items-center">
             {/* Logo */}
             <Link href="/" onClick={() => setMenuOpen(false)}>
-              <img
-                src="/logo.jpg"
-                alt="Vcyber Logo"
-                className={`transition-all duration-300 ${isScrolled ? "w-32" : "w-64"}`}
-              />
+              <img src="/logo.jpg" alt="Vcyber Logo" className="w-80 h-20 object-cover transition-all duration-300" />
             </Link>
 
             {/* Menu Button (Mobile) */}
@@ -52,9 +30,21 @@ export default function Layout({ children }) {
 
             {/* Desktop Menu */}
             <ul className="hidden lg:flex text-xl space-x-20">
-              <li><Link href="/people" className="text-[#000022] relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">People</Link></li>
-              <li><Link href="/publication" className="text-[#000022] relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Publications</Link></li>
-              <li><Link href="/contact" className="text-[#000022] relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Contact</Link></li>
+              <li>
+                <Link href="/people" className="text-[#000022] relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
+                  People
+                </Link>
+              </li>
+              <li>
+                <Link href="/publication" className="text-[#000022] relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
+                  Publications
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-[#000022] relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -86,7 +76,7 @@ export default function Layout({ children }) {
                 <li><Link href="/people" className="hover:underline">People</Link></li>
               </ul>
               <ul className="space-y-2">
-                <li><Link href="/publications" className="hover:underline">Publications</Link></li>
+                <li><Link href="/publication" className="hover:underline">Publications</Link></li>
                 <li><Link href="/contact" className="hover:underline">Contact</Link></li>
               </ul>
             </div>
