@@ -32,7 +32,12 @@ export default function PeoplePage() {
                     role: "Graduate Researcher",
                     img: "people/MiaDo.jpg",
                     about: "Expert in network security and secure system architecture. 14 years of experience, CEH-certified, and part-time lecturer."
-                },
+                }
+            ]
+        },
+        {
+            title: "MASTER'S STUDENTS",
+            members: [
                 {
                     name: "Le Quoc Dung",
                     role: "Graduate Researcher",
