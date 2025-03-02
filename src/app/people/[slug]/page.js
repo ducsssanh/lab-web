@@ -55,6 +55,7 @@ She holds a Master’s degree in Telecommunications and is passionate about cybe
 His research interests lie in Boolean functions, cryptanalysis, and the security of symmetric key cryptographic algorithms. He has worked extensively on implementing and analyzing Russian block ciphers (Magma, Kuznechik), leveraging C/C++ and CUDA for high-performance cryptographic computations. His Bachelor’s thesis focused on cryptanalysis using power consumption analysis, applying correlation and differential analysis techniques to recover secret keys.
 
 Dũng has also excelled in international cryptography competitions, earning a Gold Medal in the 2024 NSUCRYPTO International Olympiad in Cryptography, along with multiple Silver and Copper Medals in international mathematics and cryptography contests. He actively contributes to the cybersecurity community through Capture The Flag (CTF) competitions, cryptographic algorithm development, and mathematical modeling.
+
 Beyond research, he is passionate about technical documentation and high-quality LaTeX formatting, actively contributing well-structured mathematical documentation and cryptography notebooks.
 `,
   },
@@ -205,6 +206,7 @@ His expertise spans:
 ✅ Network Security and Privacy – Enhancing secure communication protocols for next-generation networks.
 
 Prof. Xiang is an Associate Editor for IEEE Transactions on Network Science and Engineering, IEEE Communications Surveys and Tutorials, and Computer Standards & Interfaces. He has also served as a Senior Area Editor for IEEE Signal Processing Letters and a Guest Editor for IEEE Transactions on Industrial Informatics and IEEE Multimedia.
+
 As a Scientific Advisor at VCyber Lab, Dr. Xiang collaborates on AI-enhanced cybersecurity, PQC research, and advanced network security solutions, ensuring cutting-edge innovation in cyber resilience and intelligence-driven security.
 `,
   },
