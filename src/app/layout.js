@@ -30,18 +30,50 @@ export default function Layout({ children }) {
 
             {/* Desktop Menu */}
             <ul className="hidden lg:flex text-xl space-x-20">
+              <Link
+                href="/"
+                className="text-[#000022] relative 
+                            after:absolute after:left-0 after:bottom-[-6px] 
+                            after:w-full after:h-[3px] after:bg-[#f40000] 
+                            after:scale-x-0 after:origin-left after:transition-transform 
+                            after:duration-300 hover:after:scale-x-100"
+              >
+                Home
+              </Link>
+
               <li>
-                <Link href="/people" className="text-[#000022] relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
+              <Link
+                href="/people"
+                className="text-[#000022] relative 
+                            after:absolute after:left-0 after:bottom-[-6px] 
+                            after:w-full after:h-[3px] after:bg-[#f40000] 
+                            after:scale-x-0 after:origin-left after:transition-transform 
+                            after:duration-300 hover:after:scale-x-100"
+              >
                   People
                 </Link>
               </li>
               <li>
-                <Link href="/publication" className="text-[#000022] relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
+              <Link
+                href="/publication"
+                className="text-[#000022] relative 
+                            after:absolute after:left-0 after:bottom-[-6px] 
+                            after:w-full after:h-[3px] after:bg-[#f40000] 
+                            after:scale-x-0 after:origin-left after:transition-transform 
+                            after:duration-300 hover:after:scale-x-100"
+              >
                   Publications
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-[#000022] relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
+              <Link
+                href="/contact"
+                className="text-[#000022] relative 
+                            after:absolute after:left-0 after:bottom-[-6px] 
+                            after:w-full after:h-[3px] after:bg-[#f40000] 
+                            after:scale-x-0 after:origin-left after:transition-transform 
+                            after:duration-300 hover:after:scale-x-100"
+              >
                   Contact
                 </Link>
               </li>
@@ -65,7 +97,7 @@ export default function Layout({ children }) {
         <footer className="relative bg-[#c10000] text-white py-10 px-6">
           <div className="container mx-auto flex flex-col md:flex-row justify-between items-start">
             <div className="md:w-1/4">
-              <img src="/logo.jpg" alt="Vcyber Logo" className="w-32 mb-4" />
+              <img src="/footerlogo.png" alt="Vcyber Logo" className="w-32 mb-4" />
               <p className="text-sm">Copyright © {new Date().getFullYear()} VinUni.</p>
               <p className="text-sm">All Rights Reserved.</p>
               <a href="/privacy-policy" className="text-sm underline">Privacy Policy</a>
