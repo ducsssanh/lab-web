@@ -1,3 +1,5 @@
+export { notFound } from 'next/navigation';
+
 export default function PublicationsPage() {
     const publications = [
         {
