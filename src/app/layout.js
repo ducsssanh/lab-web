@@ -77,6 +77,18 @@ export default function Layout({ children }) {
                   Contact
                 </Link>
               </li>
+              <li>
+              <Link
+                href="/join-us"
+                className="text-[#000022] relative 
+                            after:absolute after:left-0 after:bottom-[-6px] 
+                            after:w-full after:h-[3px] after:bg-[#f40000] 
+                            after:scale-x-0 after:origin-left after:transition-transform 
+                            after:duration-300 hover:after:scale-x-100"
+              >
+                  Join Us
+                </Link>
+              </li>
             </ul>
           </div>
 
