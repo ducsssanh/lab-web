@@ -195,7 +195,7 @@ At VCyber Lab, he serves as a Scientific Advisor, collaborating on post-quantum 
   'prof-yong-xiang': {
     name: 'Prof. Yong Xiang',
     position: 'Scientific Advisor | Professor of Network Engineering, Deakin University',
-    imageUrl: '/people/YongXiang.jpg',
+    imageUrl: '/people/YongXiang.png',
     description: `Prof. Yong Xiang is a Professor of Network Engineering at Deakin University and a leading expert in cybersecurity, distributed computing, artificial intelligence, and trustworthy computing. He is the Director of the Trustworthy Intelligent Computing Lab (formerly Deakin Blockchain Innovation Lab) and has held key leadership roles, including Associate Head of School (Research), Director of AI and Data Analytics Research Cluster, and Director of the Data to Intelligence Research Centre.
 
 Prof. Xiang earned his Ph.D. from the University of Melbourne and has secured numerous competitive research grants, including nine Discovery and Linkage grants from the Australian Research Council (ARC). With over 270 journal publications and seven authored books, his research contributions have been widely recognized and commercialized.
