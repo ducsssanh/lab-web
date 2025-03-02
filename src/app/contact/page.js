@@ -7,10 +7,10 @@ export default function ContactPage() {
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Thông tin liên hệ */}
         <div className="flex flex-col justify-center text-center md:ml-20 md:text-left">
-          <h1 className="text-5xl font-bold text-[#191938]">Contact Us</h1>
+          <h1 className="text-5xl font-bold text-[#191938]">Contact us</h1>
           <p className="mt-2 text-gray-600">Get in touch with our team.</p>
           <h2 className="text-3xl pt-5 text-[#191938]">
-            Dr. Nguyen Dinh Duc Nha
+            Dr. Nguyen Dinh Duc Nha (Tony)
           </h2>
 
           <div className="mt-6 space-y-4">
