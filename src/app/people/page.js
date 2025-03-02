@@ -2,10 +2,8 @@ export { notFound } from 'next/navigation';
 
 export default function PeoplePage() {
     // const generateSlug = (name) => name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-    const generateSlug = (name) => {
-  const cleanedName = name.replace(/\(.*\)/, '').trim();
-  return cleanedName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-}
+    const cleanedName = name.replace(/[()]/g, '').trim();
+return cleanedName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
 
     const groups = [
         {
