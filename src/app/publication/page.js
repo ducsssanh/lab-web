@@ -1,4 +1,6 @@
-export { notFound } from 'next/navigation';
+"use client";
+export { notFound } from "next/navigation";
+import { motion } from "framer-motion";
 
 export default function PublicationsPage() {
     const publications = [
@@ -102,11 +104,24 @@ export default function PublicationsPage() {
 
             <div className="mt-6 mx-auto space-y-8">
                 {publications.map((section, index) => (
-                    <div key={index}>
+                    <motion.div 
+                        key={index}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                    >
                         <h2 className="text-2xl font-semibold text-[#000022]">{section.year}</h2>
                         <ul className="mt-2 space-y-4">
                             {section.papers.map((paper, idx) => (
-                                <li key={idx} className="border-l-4 border-gray-600 pl-4">
+                                <motion.li 
+                                    key={idx}
+                                    className="border-l-4 border-gray-600 pl-4"
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, delay: idx * 0.1, ease: "easeOut" }}
+                                    viewport={{ once: true }}
+                                >
                                     <h3 className="text-lg font-semibold text-[#000022] hover:underline">
                                         <a href={paper.pdfLink}>{paper.title}</a>
                                     </h3>
@@ -117,10 +132,10 @@ export default function PublicationsPage() {
                                             <a href={paper.pdfLink} className="text-[#c10000]">📄 PDF</a>
                                         )}
                                     </div>
-                                </li>
+                                </motion.li>
                             ))}
                         </ul>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </div>
