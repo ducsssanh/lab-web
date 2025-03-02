@@ -9,9 +9,9 @@ export default function PeoplePage() {
     ];
 
     return (
-        <div className="text-white py-10 px-4">
-            <h1 className="text-3xl font-bold text-center">Our People</h1>
-            <p className="mt-2 text-center text-gray-300">
+        <div className="text-[#000022] py-10 px-4">
+            <h1 className="text-3xl pt-40 font-bold text-center">Our People</h1>
+            <p className="mt-2 text-center text-[#191938]">
                 Meet our talented researchers and faculty members.
             </p>
 
@@ -26,8 +26,8 @@ export default function PeoplePage() {
                         <h2 className="text-xl font-semibold">
                             {member.name}
                         </h2>
-                        <p className="text-gray-400 italic">{member.role}</p>
-                        <p className="mt-2 text-gray-300">{member.about}</p>
+                        <p className="text-[#f40000] italic">{member.role}</p>
+                        <p className="mt-2 text-[#32324e]">{member.about}</p>
                     </div>
                 ))}
             </div>
