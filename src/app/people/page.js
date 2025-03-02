@@ -1,14 +1,18 @@
 export { notFound } from 'next/navigation';
 
 export default function PeoplePage() {
-    const generateSlug = (name) => name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    // const generateSlug = (name) => name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    const generateSlug = (name) => {
+  const cleanedName = name.replace(/\(.*\)/, '').trim();
+  return cleanedName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+}
 
     const groups = [
         {
             title: "PRINCIPAL INVESTIGATOR & FOUNDER",
             members: [
                 {
-                    name: "Dr. Dinh Duc Nha Nguyen",
+                    name: "Dr. Dinh Duc Nha Nguyen (Tony/Nhã)",
                     role: "Principal Investigator, Founder | Assistant Professor, VinUniversity",
                     img: "people/nha.jpg",
                     about: "Specializing in Post-Quantum Cryptography (PQC), AI-driven cybersecurity, and IoT security. Advisor for PSI Testing and Certification, bridging research with real-world security applications."
