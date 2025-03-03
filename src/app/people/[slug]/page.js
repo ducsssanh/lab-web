@@ -99,7 +99,6 @@ His go-to challenges are usually pwn and rev, but when they’re too hard, He’
   },
 
   // RESEARCH ASSOCIATE 
-const researchers = {
   'vu-anh-le': {
     name: 'Vũ Anh Lê (Luffy Le)',
     position: 'Research Associate',
