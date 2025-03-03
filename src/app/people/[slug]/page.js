@@ -72,19 +72,29 @@ Beyond research, he is passionate about technical documentation and high-quality
     name: 'Nguyễn Đình Cường',
     position: 'Graduate Researcher',
     imageUrl: '/people/NguyenDinhCuong.jpg',
-    description: `Nguyễn Đình Cường is a Master’s student in Computer and Information Science at The University of Pennsylvania and a researcher at VCyber Lab, VinUniversity. His research focuses on software and system security, automated program analysis, vulnerability detection, and binary security techniques, aiming to advance both offensive and defensive cybersecurity methodologies.
+    description: `Nguyen Dinh Cuong - a Master’s student at University of Pennsylvania (UPenn), who spends way too much time breaking things that aren’t mine (legally, of course) in the name of science. I’m currently a research apprentice at SEFCOM, which is basically where people like me gather to make computers cry. I focus on kernel exploitation, binary exploitation, and reverse engineering.
 
-His expertise lies in reverse engineering, binary hardening, automated exploit detection, and program analysis, leveraging cutting-edge techniques to identify and mitigate software vulnerabilities. He previously worked as a Research Intern at the Systems Security Lab, Sungkyunkwan University (2023), where he contributed to vulnerability detection frameworks and automated security analysis tools.
+When I’m not doing research, I compete in hacking competitions called ctfs. I’m part of Shellphish, one of the most legendary ctf teams out there. Back in undergrad, I started the VinUni Hacking Club, where I now serve as an advisor, training the next generation of talented hackers.
 
-Key Achievements & Research Contributions
-✅ Top 10 Contestant, Bosch CodeRace CTF 2023 – Competed in high-level cybersecurity challenges organized by Robert Bosch GmbH.
-✅ 17th Place, vikeCTF 2023 – Ranked among the top teams in a university-level cybersecurity competition hosted by the University of Victoria.
-✅ First Prize, CECS Day 2022 – Recognized for developing the best programming project at VinUniversity’s College of Engineering & Computer Science.
-✅ Third Prize, The 2020 ICPC Vietnam Northern and Central Provincial Programming Contest – Demonstrated excellence in competitive programming and algorithm design.
-✅ Merit-Based Scholar, VinUniversity – Awarded a prestigious merit-based scholarship for academic and research excellence.
-✅ National Recognition, Fourth Prize – National Science & Engineering Contest 2019 – Acknowledged by the Ministry of Education & Training for outstanding innovation in engineering.
+My go-to challenges are usually pwn and rev, but when they’re too hard, I’ll pretend I like web or osint just to feel productive. I compete under the handle sashaNull.
 
-At VCyber Lab, he is actively working on developing advanced binary security tools, automated vulnerability detection frameworks, and novel methods for program security analysis. His goal is to enhance software security through automation, AI-driven security analytics, and robust exploit mitigation strategies.
+- Past Projects
++ Pwnnsylvania: UPenn’s innovative cybersecurity education platform, based on ASU’s pwn.college. It offers hands-on, challenge-based learning in exploit development, reverse engineering, cryptography and web security.
++ PennCloud: A scalable distributed system offering fault-tolerant storage, webmail, file management, user authentication, and an admin console for system monitoring and control.
++ VinUni Hacking Club CTF 2023: The official archive of challenges from VHC CTF 2023, organized by the VinUni Hacking Club.
+
+- Honors and Awards
++ Blue Belt on pwn.college, 2024
++ 2nd Place in CSAW CTF Qualification Round, USA, 2024
++ 6th Place in corCTF, USA, 2024
++ 4th Prize in 2024 ASEAN Student Contest on Information Security, Vietnam, 2024
++ 4th Place in Digital Overdose Autumn CTF, USA, 2021
++ 3rd Prize in The ACM-ICPC Northern Provincial Programming Contest, Vietnam, 2021
++ Vingroup Science and Technology Scholarship, 2023
+
+- Teaching
++ Spring 2025 : Cybersecurity (COMP4030) & Cryptography (COMP4050), VinUni
++ Fall 2024 : Computer and Network Security (CIS 5510), UPenn
 `,
   },
 
