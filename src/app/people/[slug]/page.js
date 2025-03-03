@@ -99,21 +99,19 @@ His go-to challenges are usually pwn and rev, but when they’re too hard, He’
   },
 
   // RESEARCH ASSOCIATE 
+const researchers = {
   'vu-anh-le': {
     name: 'Vũ Anh Lê (Luffy Le)',
     position: 'Research Associate',
     imageUrl: '/people/LuffyLe.JPG',
-    description: `Vũ Anh Lê is a Research Associate at VCyber Lab, VinUniversity, with expertise in algorithm design, mathematical modelling, and machine learning applications in cybersecurity. He received Bachelor of Science in Mathematics at Beloit College, Wisconsin, USA.
+    description: `Vũ Anh Lê is a Research Associate at VCyber Lab, VinUniversity, specializing in the design and development of quantum-resistant algorithms and post-quantum cryptographic (PQC) protocols. With a robust background in mathematics (B.Sc. in Mathematics from Beloit College, Wisconsin, USA) and deep expertise in algorithm design and mathematical modeling, his research is dedicated to securing digital infrastructures against the emerging threats posed by quantum computing.
 
-He has conducted advanced research on AI-driven cryptography, mathematical security frameworks, and optimization of neural networks for cybersecurity applications. He has interned at Google Research and MIT, working on machine learning for cyber threat detection, adversarial AI defense, and quantum-resistant cryptographic protocols.
+His work focuses on:
+• Quantum-Resistant Algorithms – Leveraging advanced mathematical frameworks—from analysis and topology to differential equations—to develop next-generation algorithms that withstand quantum attacks.
+• Post-Quantum Cryptographic Protocols – Innovating novel PQC protocols and security models to ensure cryptographic integrity in a post-quantum era.
+• AI-Enhanced Quantum Cyber Defense – Integrating machine learning with quantum-safe strategies to improve threat detection and adversarial resistance.
 
-His research contributions include:
-• Quantum-Resistant Algorithms – Relying on techniques from analysis, topology, and differential equations to propose next-gen quantum-resilient algorithms.
-• Post-Quantum Cryptographic Security Models – Developing novel mathematical techniques for quantum-resilient cryptographic algorithms.
-• AI-Driven Cyber Defense Systems – Applying deep learning and mathematical topology to enhance threat detection and adversarial AI resistance.
-
-With a strong foundation in Python, C++, Haskell, and formal verification tools (Coq, Isabelle, Lean), he actively contributes to building mathematically rigorous cybersecurity models for the next generation of AI-optimized and quantum-safe encryption systems.
-`,
+Having interned at leading institutions such as Google Research and MIT, he has contributed to cutting-edge advancements in quantum-safe cryptography. Proficient in Python, C++, Haskell, and formal verification tools (Coq, Isabelle, Lean), he is committed to advancing mathematically rigorous cybersecurity solutions for the quantum age.`,
   },
 
   // RESEARCH ASSISTANTS
