@@ -72,11 +72,11 @@ Beyond research, he is passionate about technical documentation and high-quality
     name: 'Nguyễn Đình Cường',
     position: 'Graduate Researcher',
     imageUrl: '/people/NguyenDinhCuong.jpg',
-    description: `Nguyen Dinh Cuong - a Master’s student at University of Pennsylvania (UPenn), who spends way too much time breaking things that aren’t mine (legally, of course) in the name of science. I’m currently a research apprentice at SEFCOM, which is basically where people like me gather to make computers cry. I focus on kernel exploitation, binary exploitation, and reverse engineering.
+    description: `Nguyen Dinh Cuong - a Master’s student at University of Pennsylvania (UPenn), who spends way too much time breaking things that aren’t mine (legally, of course) in the name of science. He is currently a research apprentice at SEFCOM, which is basically where people like him gather to make computers cry. He focuses on kernel exploitation, binary exploitation, and reverse engineering.
 
-When I’m not doing research, I compete in hacking competitions called ctfs. I’m part of Shellphish, one of the most legendary ctf teams out there. Back in undergrad, I started the VinUni Hacking Club, where I now serve as an advisor, training the next generation of talented hackers.
+When he is not doing research, he competes in hacking competitions called ctfs. He is part of Shellphish, one of the most legendary ctf teams out there. Back in undergrad, he started the VinUni Hacking Club, where he now serve as an advisor, training the next generation of talented hackers.
 
-My go-to challenges are usually pwn and rev, but when they’re too hard, I’ll pretend I like web or osint just to feel productive. I compete under the handle sashaNull.
+His go-to challenges are usually pwn and rev, but when they’re too hard, He’ll pretend he like web or osint just to feel productive. he competes under the handle sashaNull.
 
 - Past Projects
 + Pwnnsylvania: UPenn’s innovative cybersecurity education platform, based on ASU’s pwn.college. It offers hands-on, challenge-based learning in exploit development, reverse engineering, cryptography and web security.
