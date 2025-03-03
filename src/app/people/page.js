@@ -20,7 +20,7 @@ export default function PeoplePage() {
       ],
     },
     {
-      title: "ASSOCIATE INVESTOGATOR",
+      title: "ASSOCIATE INVESTIGATOR",
       members: [
         {
           name: "Dr. Le Duy Dung (Andrew)",
@@ -70,7 +70,7 @@ export default function PeoplePage() {
       ],
     },
     {
-      title: "Research Associate",
+      title: "RESEARCH ASSOCIATE",
       members: [
         {
           name: "Vu Anh Le (Luffy Le)",
@@ -108,7 +108,7 @@ export default function PeoplePage() {
       ],
     },
     {
-      title: "DISTINGUISED RESEARCH FELLOWS",
+      title: "DISTINGUISHED RESEARCH FELLOWS",
       members: [
         {
           name: "Dr. Keshav Sood",
