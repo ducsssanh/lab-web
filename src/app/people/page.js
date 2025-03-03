@@ -20,7 +20,7 @@ export default function PeoplePage() {
       ],
     },
     {
-      title: "Associate Investigator",
+      title: "ASSOCIATE INVESTOGATOR",
       members: [
         {
           name: "Dr. Le Duy Dung (Andrew)",
@@ -108,18 +108,18 @@ export default function PeoplePage() {
       ],
     },
     {
-      title: "Distinguished Research Fellows",
+      title: "DISTINGUISED RESEARCH FELLOWS",
       members: [
         {
           name: "Dr. Keshav Sood",
-          role: "Distinguished Research Fellow (IoT, AI in cybersecurity)",
+          role: "IoT & AI in cybersecurity",
           img: "people/KeshavSood.jpg",
           about:
             "Senior Lecturer at Deakin University with expertise in IoT and AI-driven cybersecurity. Research focused on SDN security and innovative network defense strategies.",
         },
         {
           name: "Dr. Syed Wajid Ali Shah",
-          role: "Distinguished Research Fellow (PQC)",
+          role: "PQC",
           img: "people/AliShah.jpg",
           about:
             "Casual Research Fellow at Deakin University’s Centre for Cyber Resilience and Trust, specializing in post-quantum cryptography and advanced security frameworks.",
