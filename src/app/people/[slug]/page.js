@@ -83,7 +83,7 @@ At VCyber Lab, he is actively working on developing advanced binary security too
   'vu-anh-le': {
     name: 'Vũ Anh Lê (Luffy Le)',
     position: 'Research Assistant',
-    imageUrl: '/people/LuffyLe.jpg',
+    imageUrl: '/people/LuffyLe.JPG',
     website: 'https://www.linkedin.com/in/luffyle',
     description: `Vũ Anh Lê is a Research Assistant at VCyber Lab, VinUniversity, with expertise in algorithm design, mathematical modelling, and machine learning applications in cybersecurity. He received Bachelor of Science in Mathematics at Beloit College, Wisconsin, USA.
 
