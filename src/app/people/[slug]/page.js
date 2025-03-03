@@ -20,6 +20,16 @@ Dr. Nguyen is passionate about mentoring and leading research collaborations, wo
     website: 'https://ducnha.work/',
   },
 
+  // ASSOCIATE INVESTIGATOR
+  'dr-le-duy-dung': {
+    name: 'Dr. Le Duy Dung (Andrew)',
+    position: 'Associate Investigator',
+    imageUrl: '/people/LeDuyDung.jpg',
+    website: 'https://andrew-dungle.github.io',
+    description: `Dr. Le Duy Dung (Andrew) is an AI-driven cybersecurity and federated learning researcher. Former Senior Data Scientist at Grab, with publications in top-tier AI conferences.
+`,
+  },
+
   // GRADUATE RESEARCHERS
   'van-dong-bui': {
     name: 'Van Dong Bui (Will Bui)',
@@ -30,7 +40,6 @@ Dr. Nguyen is passionate about mentoring and leading research collaborations, wo
 Before joining VCyber Lab, Will served as a Senior Cybersecurity Analyst at Lynden Group, conducting penetration testing, red teaming, and vulnerability assessments. He has also worked at Group-IB, protecting banking institutions and crypto platforms from phishing, fraud, and cybercrime activities. His background includes law enforcement experience as a Cybercrime Investigator, where he played a key role in solving over 200 cybercrime cases.
 
 Will holds a Master’s in Cyber Security Analysis from Macquarie University, Australia, and a Bachelor’s in Cyber Crime Investigation from the People’s Police Academy, Vietnam. He is also recognized as a top 1% hacking player on TryHackMe and actively leads "Take Them Down", a non-profit project dedicated to protecting Vietnamese users in cyberspace.
-
 `,
   },
   'mai-do-thi-ngoc': {
@@ -79,24 +88,25 @@ At VCyber Lab, he is actively working on developing advanced binary security too
 `,
   },
 
-  // RESEARCH ASSISTANTS
+  // RESEARCH ASSOCIATE 
   'vu-anh-le': {
     name: 'Vũ Anh Lê (Luffy Le)',
-    position: 'Research Assistant',
+    position: 'Research Associate',
     imageUrl: '/people/LuffyLe.JPG',
-    website: 'https://www.linkedin.com/in/luffyle',
     description: `Vũ Anh Lê is a Research Assistant at VCyber Lab, VinUniversity, with expertise in algorithm design, mathematical modelling, and machine learning applications in cybersecurity. He received Bachelor of Science in Mathematics at Beloit College, Wisconsin, USA.
 
 He has conducted advanced research on AI-driven cryptography, mathematical security frameworks, and optimization of neural networks for cybersecurity applications. He has interned at Google Research and MIT, working on machine learning for cyber threat detection, adversarial AI defense, and quantum-resistant cryptographic protocols.
 
 His research contributions include:
-•	Post-Quantum Cryptographic Security Models – Developing novel mathematical techniques for quantum-resilient cryptographic algorithms.
-•	Computational Security Analysis – Utilizing complex analysis, topology, and differential equations to improve cybersecurity algorithms.
-•	AI-Driven Cyber Defense Systems – Applying deep learning and mathematical topology to enhance threat detection and adversarial AI resistance.
+• Post-Quantum Cryptographic Security Models – Developing novel mathematical techniques for quantum-resilient cryptographic algorithms.
+• Computational Security Analysis – Utilizing complex analysis, topology, and differential equations to improve cybersecurity algorithms.
+• AI-Driven Cyber Defense Systems – Applying deep learning and mathematical topology to enhance threat detection and adversarial AI resistance.
 
 With a strong foundation in Python, C++, Haskell, and formal verification tools (Coq, Isabelle, Lean), he actively contributes to building mathematically rigorous cybersecurity models for the next generation of AI-optimized and quantum-safe encryption systems.
 `,
   },
+
+  // RESEARCH ASSISTANTS
   'tran-duc-anh': {
     name: 'Trần Đức Anh',
     position: 'Research Assistant',
@@ -127,54 +137,23 @@ Hoàng Anh is committed to bridging theoretical cryptography with real-world sec
 
 He has industry experience at VNCS and DTG Technology, where he worked on penetration testing, SIEM deployment, and enterprise security solution integration. His expertise includes endpoint security (SentinelOne, TrendMicro), privileged access management (BeyondTrust), and data loss prevention (Zecurion DLP).
 In research, Khanh focuses on AI-driven cybersecurity models, malware detection automation, and Web Application Firewalls (ModSecurity). He has contributed to Splunk-based threat analytics projects, cybersecurity policy compliance, and enterprise-level security architecture design.
-
 With a passion for bridging security research and real-world defense mechanisms, he aims to develop next-generation cyber resilience frameworks for critical infrastructure security.
-
 `,
   },
 
-  // COLLABORATORS
-  'dr-le-duy-dung': {
-    name: 'Dr. Le Duy Dung (Andrew)',
-    position: 'Collaborator | Assistant Professor, VinUniversity',
-    imageUrl: '/people/LeDuyDung.jpg',
-    description: `Dr. Le Duy Dung (Andrew) is an Assistant Professor at the College of Engineering and Computer Science, VinUniversity, where he leads R2Studio, a research group focused on AI-powered search and recommendation, and IndoorCare, which explores AI and simulation for smart indoor spaces. He is also the Lab Director of the Living Lab at VinUniversity’s Center for Environmental Intelligence, a technology hub connecting global experts to solve sustainable development challenges.
-
-Before joining VinUniversity, Dr. Dung was a Senior Data Scientist in the Ads and Personalization team at Grab Holdings Inc. and a Research Scientist at Singapore Management University (SMU). He earned his Ph.D. in Data Science and Engineering from SMU, under the supervision of Assoc. Prof. Hady W. Lauw.
-
-His research interests include:
-✅ AI-Driven Cybersecurity – Enhancing automated threat detection and cyber defense using AI.
-✅ Federated Learning & Secure AI Systems – Developing privacy-preserving AI models for cybersecurity applications.
-✅ Multimodal Learning for Cybersecurity – Leveraging multi-source data fusion for advanced cyber intelligence.
-✅ Robust AI Models for Threat Detection – Exploring adversarial robustness and AI-powered security analytics.
-
-Dr. Dung has led multiple funded research projects, including Smart Indoor Air Quality Control Systems, AI-powered Customer Experience Analytics, and Secure Federated Learning for Multi-Objective Recommendation Systems. His work has been published in top-tier AI conferences such as AAAI, ICML, SIGIR, and The Web Conference.
-At VCyber Lab, he collaborates on AI-driven cybersecurity research, federated learning for cyber defense, and next-generation threat detection models.
-`,
-  },
+  // DISTINGUISHED RESEARCH FELLOWS 
   'dr-keshav-sood': {
     name: 'Dr. Keshav Sood',
-    position: 'Collaborator | Senior Lecturer, Deakin University',
+    position: 'Distinguished Research Fellow (IoT, AI in cybersecurity)',
     imageUrl: '/people/KeshavSood.jpg',
-    description: `Dr. Keshav Sood is a Senior Lecturer in Cybersecurity at Deakin University, Australia, and an expert in next-generation network security, software-defined networking (SDN) security, and cyber resilience. He earned his Ph.D. in Information Technology from Deakin University, focusing on SDN security, and has since contributed extensively to cybersecurity research, network privacy, and data security.
-
-Dr. Sood’s work has been published in leading cybersecurity journals, including IEEE Transactions on Mobile Computing, IEEE Transactions on Information Forensics and Security, and IEEE Transactions on Dependable and Secure Computing (IEEE TDSC). He has successfully obtained research funding from the Australian Department of Defense, Cyber CRC, and the Department of Foreign Affairs and Trade (DFAT, Australia).
-
-He serves as an Associate Editor for multiple IEEE journals, including the IEEE Internet of Things Journal, IEEE Open Journal of Computer Society, and IEEE Transactions on Dependable and Secure Computing. Dr. Sood is also an HDR Coordinator at Deakin University, supervising Master’s and Ph.D. students in cybersecurity, distributed computing, and secure data management.
-
-At VCyber Lab, he collaborates on post-quantum security research, AI-driven cyber defense, and federated security models for protecting critical digital infrastructure.
+    description: `Dr. Keshav Sood is a Senior Lecturer in Cybersecurity at Deakin University, Australia, specializing in next-generation network security with a focus on IoT and AI-driven cybersecurity. He earned his Ph.D. in Information Technology from Deakin University and has contributed extensively to research on SDN security and innovative network defense strategies.
 `,
   },
   'dr-syed-wajid-ali-shah': {
     name: 'Dr. Syed Wajid Ali Shah',
-    position: 'Collaborator | Research Fellow, Deakin Cyber Research and Innovation Centre',
+    position: 'Distinguished Research Fellow (PQC)',
     imageUrl: '/people/AliShah.jpg',
-    description: `Dr. Syed Wajid Ali Shah is a Casual Research Fellow at Deakin University’s Centre for Cyber Resilience and Trust, specializing in cybersecurity, distributed computing, and human-centered computing. He earned his Ph.D. from the University of New South Wales (UNSW) and has contributed to advanced security models, privacy-preserving systems, and trust frameworks for distributed environments.
-
-As part of Deakin’s Cyber Research and Innovation Centre, Dr. Shah is involved in cyber resilience projects, network security research, and digital trust modeling. His expertise spans secure cloud computing, privacy-enhancing technologies, and AI-powered security solutions.
-
-At VCyber Lab, Dr. Shah collaborates on quantum-resilient security architectures, AI-driven cybersecurity, and distributed system security for next-generation networks.
-
+    description: `Dr. Syed Wajid Ali Shah is a Casual Research Fellow at Deakin University’s Centre for Cyber Resilience and Trust, specializing in post-quantum cryptography (PQC) and advanced security frameworks. He earned his Ph.D. from the University of New South Wales (UNSW) and has contributed to state-of-the-art research on privacy-enhancing and quantum-resilient systems.
 `,
   },
 
@@ -187,27 +166,18 @@ At VCyber Lab, Dr. Shah collaborates on quantum-resilient security architectures
 
 He earned his Ph.D. from Deakin University, a Master of Science from Chalmers University of Technology, Sweden, and a Bachelor’s degree in Engineering from the University of Science and Technology of China. His research is deeply focused on cryptographic security frameworks, PQC algorithm optimization, and cybersecurity resilience in distributed systems.
 
-Prof. Pan has played a pivotal role in advancing the security of next-generation cryptographic schemes that remain resistant to quantum computing attacks, ensuring long-term data integrity in secure communications, IoT, and cloud-based infrastructures.
-
-At VCyber Lab, he serves as a Scientific Advisor, collaborating on post-quantum security architectures, cryptographic resilience strategies, and AI-enhanced cybersecurity frameworks. His expertise strengthens the lab’s mission to pioneer the next era of cyber defense in the post-quantum world.
+At VCyber Lab, he serves as a Scientific Advisor, collaborating on post-quantum security architectures, cryptographic resilience strategies, and AI-enhanced cybersecurity frameworks.
 `,
   },
   'prof-yong-xiang': {
     name: 'Prof. Yong Xiang',
     position: 'Scientific Advisor | Professor of Network Engineering, Deakin University',
     imageUrl: '/people/YongXiang.png',
-    description: `Prof. Yong Xiang is a Professor of Network Engineering at Deakin University and a leading expert in cybersecurity, distributed computing, artificial intelligence, and trustworthy computing. He is the Director of the Trustworthy Intelligent Computing Lab (formerly Deakin Blockchain Innovation Lab) and has held key leadership roles, including Associate Head of School (Research), Director of AI and Data Analytics Research Cluster, and Director of the Data to Intelligence Research Centre.
+    description: `Prof. Yong Xiang is a Professor of Network Engineering at Deakin University and a leading expert in cybersecurity, distributed computing, artificial intelligence, and trustworthy computing. He is the Director of the Trustworthy Intelligent Computing Lab and has held key leadership roles in multiple research clusters.
 
-Prof. Xiang earned his Ph.D. from the University of Melbourne and has secured numerous competitive research grants, including nine Discovery and Linkage grants from the Australian Research Council (ARC). With over 270 journal publications and seven authored books, his research contributions have been widely recognized and commercialized.
+Prof. Xiang’s expertise spans AI-driven cybersecurity, blockchain-based security solutions, and secure communication protocols. His extensive publication record and numerous research grants underscore his leadership in the field.
 
-His expertise spans:
-✅ AI-Driven Cybersecurity – Developing machine learning-based security models for cyber threat detection and prevention.
-✅ Blockchain and Secure Distributed Systems – Designing trustworthy blockchain-based security solutions.
-✅ Network Security and Privacy – Enhancing secure communication protocols for next-generation networks.
-
-Prof. Xiang is an Associate Editor for IEEE Transactions on Network Science and Engineering, IEEE Communications Surveys and Tutorials, and Computer Standards & Interfaces. He has also served as a Senior Area Editor for IEEE Signal Processing Letters and a Guest Editor for IEEE Transactions on Industrial Informatics and IEEE Multimedia.
-
-As a Scientific Advisor at VCyber Lab, Dr. Xiang collaborates on AI-enhanced cybersecurity, PQC research, and advanced network security solutions, ensuring cutting-edge innovation in cyber resilience and intelligence-driven security.
+At VCyber Lab, he collaborates on AI-enhanced cybersecurity, post-quantum cryptography research, and advanced network security solutions.
 `,
   },
 };
@@ -254,5 +224,3 @@ export default function TeamMemberPage() {
     </div>
   );
 }
-
-// Let me know if you want me to tweak anything else! 🚀
