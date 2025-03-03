@@ -108,15 +108,18 @@ export default function Layout({ children }) {
         <main className="flex-grow pt-20 px-4">{children}</main>
 
         {/* Footer */}
-        <footer className="relative bg-[#c10000] text-white py-10 px-6">
-          <div className="container mx-auto flex flex-col md:flex-row justify-between items-start">
-            <div className="md:w-1/4">
-              <img src="/footerlogo.png" alt="Vcyber Logo" className="w-32 mb-4" />
+        <footer className="relative bg-[#c10000] text-white py-10 px-6 text-center sm:text-left">
+          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+          {/* Logo & Copyright Section */}
+            <div className="md:w-1/4 text-center md:text-left">
+              <img src="/footerlogo.png" alt="Vcyber Logo" className="w-32 mb-4 mx-auto md:mx-0" />
               <p className="text-sm">Copyright © {new Date().getFullYear()} vcyber.</p>
               <p className="text-sm">All Rights Reserved.</p>
               <a href="/privacy-policy" className="text-sm underline">Privacy Policy</a>
             </div>
-            <div className="md:w-2/4 flex justify-around mt-6 md:mt-0">
+
+          {/* Footer Navigation Links */}
+            <div className="md:w-2/4 flex flex-col sm:flex-row justify-around mt-6 md:mt-0 gap-4 text-center sm:text-left">
               <ul className="space-y-2">
                 <li><Link href="/" className="hover:underline">Home</Link></li>
                 <li><Link href="/people" className="hover:underline">People</Link></li>
@@ -128,9 +131,12 @@ export default function Layout({ children }) {
               </ul>
             </div>
           </div>
+
+          {/* Scroll-to-Top Button */}
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} 
-            className="absolute bottom-4 right-4 bg-white text-[#1E3A8A] p-2 rounded-full shadow-lg hover:bg-gray-200">
+            className="fixed bottom-6 right-6 bg-white text-[#1E3A8A] p-3 rounded-full shadow-lg hover:bg-gray-200"
+          >
             ⬆️
           </button>
         </footer>
