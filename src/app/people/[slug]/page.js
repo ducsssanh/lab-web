@@ -103,13 +103,13 @@ His go-to challenges are usually pwn and rev, but when they’re too hard, He’
     name: 'Vũ Anh Lê (Luffy Le)',
     position: 'Research Associate',
     imageUrl: '/people/LuffyLe.JPG',
-    description: `Vũ Anh Lê is a Research Assistant at VCyber Lab, VinUniversity, with expertise in algorithm design, mathematical modelling, and machine learning applications in cybersecurity. He received Bachelor of Science in Mathematics at Beloit College, Wisconsin, USA.
+    description: `Vũ Anh Lê is a Research Associate at VCyber Lab, VinUniversity, with expertise in algorithm design, mathematical modelling, and machine learning applications in cybersecurity. He received Bachelor of Science in Mathematics at Beloit College, Wisconsin, USA.
 
 He has conducted advanced research on AI-driven cryptography, mathematical security frameworks, and optimization of neural networks for cybersecurity applications. He has interned at Google Research and MIT, working on machine learning for cyber threat detection, adversarial AI defense, and quantum-resistant cryptographic protocols.
 
 His research contributions include:
+• Quantum-Resistant Algorithms – Relying on techniques from analysis, topology, and differential equations to propose next-gen quantum-resilient algorithms.
 • Post-Quantum Cryptographic Security Models – Developing novel mathematical techniques for quantum-resilient cryptographic algorithms.
-• Computational Security Analysis – Utilizing complex analysis, topology, and differential equations to improve cybersecurity algorithms.
 • AI-Driven Cyber Defense Systems – Applying deep learning and mathematical topology to enhance threat detection and adversarial AI resistance.
 
 With a strong foundation in Python, C++, Haskell, and formal verification tools (Coq, Isabelle, Lean), he actively contributes to building mathematically rigorous cybersecurity models for the next generation of AI-optimized and quantum-safe encryption systems.
