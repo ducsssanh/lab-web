@@ -58,7 +58,7 @@ export default function PeoplePage() {
                 {
                     name: "Vu Anh Le (Luffy Le)",
                     role: "Research Assistant",
-                    img: "people/LuffyLe.jpg",
+                    img: "people/LuffyLe.JPG",
                     about: "Algorithm design and mathematical modeling expert, working on adversarial AI defense and quantum-resistant cryptographic protocols."
                 },
                 {
