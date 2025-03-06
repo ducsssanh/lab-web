@@ -11,6 +11,18 @@ export default function Layout({ children }) {
 
   return (
     <html lang="en">
+    <Head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FL93G3YHV"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9FL93G3YHV');
+          `}
+        </script>
+    </Head>
       <body className="min-h-screen flex flex-col">
         {/* Navbar */}
         <nav className="fixed w-full top-0 z-50 bg-white px-6 shadow-md">
