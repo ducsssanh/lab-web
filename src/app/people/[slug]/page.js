@@ -99,19 +99,21 @@ His go-to challenges are usually pwn and rev, but when they’re too hard, He’
   },
 
   // RESEARCH ASSOCIATE 
-  'vu-anh-le': {
-    name: 'Vũ Anh Lê (Luffy Le)',
-    position: 'Research Associate',
-    imageUrl: '/people/LuffyLe.JPG',
-    description: `Vũ Anh Lê is a Research Associate at VCyber Lab, VinUniversity, specializing in the design and development of quantum-resistant algorithms and post-quantum cryptographic (PQC) protocols. With a robust background in mathematics (B.Sc. in Mathematics from Beloit College, Wisconsin, USA) and deep expertise in algorithm design and mathematical modeling, his research is dedicated to securing digital infrastructures against the emerging threats posed by quantum computing.
+'vu-anh-le': {
+  name: 'Vũ Anh Lê (Luffy Le)',
+  position: 'Research Associate',
+  imageUrl: '/people/LuffyLe.JPG',
+  description: `Vũ Anh Lê is a Research Associate at VCyber Lab, VinUniversity. He specialized in quantum information science, quantum-resistant algorithms, and advanced cryptographic protocols. He received his degree, B.Sc. in Mathematics, from Beloit College, Wisconsin, USA). With a deep expertise in algorithm design and mathematical modeling, his research is dedicated to designing hard computational problems that remain intractable even for quantum computers—all while ensuring lightweight, efficient implementations.
 
 His work focuses on:
-• Quantum-Resistant Algorithms – Leveraging advanced mathematical frameworks—from analysis and topology to differential equations—to develop next-generation algorithms that withstand quantum attacks.
-• Post-Quantum Cryptographic Protocols – Innovating novel PQC protocols and security models to ensure cryptographic integrity in a post-quantum era.
-• AI-Enhanced Quantum Cyber Defense – Integrating machine learning with quantum-safe strategies to improve threat detection and adversarial resistance.
-
-Having interned at leading institutions such as Google Research and MIT, he has contributed to cutting-edge advancements in quantum-safe cryptography. Proficient in Python, C++, Haskell, and formal verification tools (Coq, Isabelle, Lean), he is committed to advancing mathematically rigorous cybersecurity solutions for the quantum age.`,
-  },
+<ul>
+  <li><strong>Quantum Information Science &amp; Algorithms:</strong> Crafting and analyzing complex computational challenges that resist quantum attacks.</li>
+  <li><strong>Quantum-Resistant Cryptographic Protocols:</strong> Developing innovative and scalable cryptographic solutions to secure digital infrastructures in the quantum era.</li>
+  <li><strong>Advanced Security Implementations:</strong> Integrating rigorous mathematical techniques with cutting-edge quantum-safe strategies to build next-generation cyber defenses.</li>
+</ul>`,
+  Having interned at prestigious institutions such as Google Research and MIT, he has contributed to pioneering advancements in quantum-safe cybersecurity. Proficient in Python, C++, Haskell, and formal verification tools (Coq, Isabelle, Lean), he is committed to pushing the boundaries of secure, efficient, and mathematically rigorous solutions for the emerging quantum age.`,
+  linkedin: 'https://www.linkedin.com/in/luffyle/',
+},
 
   // RESEARCH ASSISTANTS
   'tran-duc-anh': {
