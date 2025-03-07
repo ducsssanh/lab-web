@@ -77,7 +77,7 @@ export default function PeoplePage() {
           role: "Research Associate",
           img: "people/LuffyLe.JPG",
           about:
-            "Algorithm design and mathematical modeling expert, working on adversarial AI defense and quantum-resistant cryptographic protocols.",
+            "Expert in quantum information science and algorithm design, focused on crafting hard computational challenges, developing quantum-resistant cryptographic protocols, and ensuring lightweight, secure implementations.",
         },
       ],
     },
