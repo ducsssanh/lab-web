@@ -74,27 +74,27 @@ Beyond research, he is passionate about technical documentation and high-quality
     imageUrl: '/people/NguyenDinhCuong.jpg',
     description: `Nguyen Dinh Cuong - a Master’s student at University of Pennsylvania (UPenn), who spends way too much time breaking things that aren’t mine (legally, of course) in the name of science. He is currently a research apprentice at SEFCOM, which is basically where people like him gather to make computers cry. He focuses on kernel exploitation, binary exploitation, and reverse engineering.
 
-When he is not doing research, he competes in hacking competitions called ctfs. He is part of Shellphish, one of the most legendary ctf teams out there. Back in undergrad, he started the VinUni Hacking Club, where he now serves as an advisor, training the next generation of talented hackers.
+When he is not doing research, he competes in hacking competitions called ctfs. He is part of Shellphish, one of the most legendary ctf teams out there. Back in undergrad, he started the VinUni Hacking Club, where he now serve as an advisor, training the next generation of talented hackers.
 
-His go-to challenges are usually pwn and rev, but when they’re too hard, he’ll pretend he likes web or osint just to feel productive. He competes under the handle sashaNull.
+His go-to challenges are usually pwn and rev, but when they’re too hard, He’ll pretend he like web or osint just to feel productive. he competes under the handle sashaNull.
 
 - Past Projects
-  + Pwnnsylvania: UPenn’s innovative cybersecurity education platform, based on ASU’s pwn.college. It offers hands-on, challenge-based learning in exploit development, reverse engineering, cryptography and web security.
-  + PennCloud: A scalable distributed system offering fault-tolerant storage, webmail, file management, user authentication, and an admin console for system monitoring and control.
-  + VinUni Hacking Club CTF 2023: The official archive of challenges from VHC CTF 2023, organized by the VinUni Hacking Club.
++ Pwnnsylvania: UPenn’s innovative cybersecurity education platform, based on ASU’s pwn.college. It offers hands-on, challenge-based learning in exploit development, reverse engineering, cryptography and web security.
++ PennCloud: A scalable distributed system offering fault-tolerant storage, webmail, file management, user authentication, and an admin console for system monitoring and control.
++ VinUni Hacking Club CTF 2023: The official archive of challenges from VHC CTF 2023, organized by the VinUni Hacking Club.
 
 - Honors and Awards
-  + Blue Belt on pwn.college, 2024
-  + 2nd Place in CSAW CTF Qualification Round, USA, 2024
-  + 6th Place in corCTF, USA, 2024
-  + 4th Prize in 2024 ASEAN Student Contest on Information Security, Vietnam, 2024
-  + 4th Place in Digital Overdose Autumn CTF, USA, 2021
-  + 3rd Prize in The ACM-ICPC Northern Provincial Programming Contest, Vietnam, 2021
-  + Vingroup Science and Technology Scholarship, 2023
++ Blue Belt on pwn.college, 2024
++ 2nd Place in CSAW CTF Qualification Round, USA, 2024
++ 6th Place in corCTF, USA, 2024
++ 4th Prize in 2024 ASEAN Student Contest on Information Security, Vietnam, 2024
++ 4th Place in Digital Overdose Autumn CTF, USA, 2021
++ 3rd Prize in The ACM-ICPC Northern Provincial Programming Contest, Vietnam, 2021
++ Vingroup Science and Technology Scholarship, 2023
 
 - Teaching
-  + Spring 2025: Cybersecurity (COMP4030) & Cryptography (COMP4050), VinUni
-  + Fall 2024: Computer and Network Security (CIS 5510), UPenn
++ Spring 2025 : Cybersecurity (COMP4030) & Cryptography (COMP4050), VinUni
++ Fall 2024 : Computer and Network Security (CIS 5510), UPenn
 `,
   },
 
@@ -103,16 +103,14 @@ His go-to challenges are usually pwn and rev, but when they’re too hard, he’
     name: 'Vũ Anh Lê (Luffy Le)',
     position: 'Research Associate',
     imageUrl: '/people/LuffyLe.JPG',
-    description: `Vũ Anh Lê is a Research Associate at VCyber Lab, VinUniversity. He specializes in quantum information science, quantum-resistant algorithms, and advanced cryptographic protocols. He received his B.Sc. in Mathematics from Beloit College, Wisconsin, USA. With deep expertise in algorithm design and mathematical modeling, his research is dedicated to designing hard computational problems that remain intractable even for quantum computers—all while ensuring lightweight, efficient implementations.
+    description: `Vũ Anh Lê is a Research Associate at VCyber Lab, VinUniversity, specializing in the design and development of quantum-resistant algorithms and post-quantum cryptographic (PQC) protocols. With a robust background in mathematics (B.Sc. in Mathematics from Beloit College, Wisconsin, USA) and deep expertise in algorithm design and mathematical modeling, his research is dedicated to securing digital infrastructures against the emerging threats posed by quantum computing.
 
 His work focuses on:
-<ul>
-  <li><strong>Quantum Information Science &amp; Algorithms:</strong> Crafting and analyzing complex computational challenges that resist quantum attacks.</li>
-  <li><strong>Quantum-Resistant Cryptographic Protocols:</strong> Developing innovative and scalable cryptographic solutions to secure digital infrastructures in the quantum era.</li>
-  <li><strong>Advanced Security Implementations:</strong> Integrating rigorous mathematical techniques with cutting-edge quantum-safe strategies to build next-generation cyber defenses.</li>
-</ul>
-Having interned at prestigious institutions such as Google Research and MIT, he has contributed to pioneering advancements in quantum-safe cybersecurity. Proficient in Python, C++, Haskell, and formal verification tools (Coq, Isabelle, Lean), he is committed to pushing the boundaries of secure, efficient, and mathematically rigorous solutions for the emerging quantum age.`,
-    linkedin: 'https://www.linkedin.com/in/luffyle/',
+• Quantum-Resistant Algorithms – Leveraging advanced mathematical frameworks—from analysis and topology to differential equations—to develop next-generation algorithms that withstand quantum attacks.
+• Post-Quantum Cryptographic Protocols – Innovating novel PQC protocols and security models to ensure cryptographic integrity in a post-quantum era.
+• AI-Enhanced Quantum Cyber Defense – Integrating machine learning with quantum-safe strategies to improve threat detection and adversarial resistance.
+
+Having interned at leading institutions such as Google Research and MIT, he has contributed to cutting-edge advancements in quantum-safe cryptography. Proficient in Python, C++, Haskell, and formal verification tools (Coq, Isabelle, Lean), he is committed to advancing mathematically rigorous cybersecurity solutions for the quantum age.`,
   },
 
   // RESEARCH ASSISTANTS
@@ -227,18 +225,6 @@ export default function TeamMemberPage() {
             >
               Visit Website
             </a>
-          )}
-          {member.linkedin && (
-            <div className="mt-4">
-              <a
-                href={member.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline"
-              >
-                LinkedIn
-              </a>
-            </div>
           )}
         </div>
       </div>
