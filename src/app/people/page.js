@@ -78,6 +78,7 @@ export default function PeoplePage() {
           img: "people/LuffyLe.JPG",
           about:
             "Expert in quantum information science and algorithm design, focused on crafting hard computational challenges, developing quantum-resistant cryptographic protocols, and ensuring lightweight, secure implementations.",
+          linkedin: "https://www.linkedin.com/in/luffyle/",
         },
       ],
     },
@@ -171,6 +172,18 @@ export default function PeoplePage() {
                     </a>
                     <p className="text-lg text-gray-600 italic">{member.role}</p>
                     <p className="mt-2 text-black text-base leading-relaxed">{member.about}</p>
+                    {member.linkedin && (
+                      <p className="mt-1">
+                        <a
+                          href={member.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-500 hover:underline"
+                        >
+                          LinkedIn
+                        </a>
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
