@@ -1,9 +1,10 @@
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 
 export default function PeoplePage() {
-  const generateSlug = (name) => {
-    const cleanedName = name.replace(/\(.*?\)/g, '').trim(); // Non-greedy removal of parentheses
-    return cleanedName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+  const generateSlug = (name = '', index) => {
+    const cleanedName = name.replace(/\(.*?\)/g, '').trim();
+    return `${cleanedName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}-${index}`;
   };
 
   const groups = [
@@ -86,16 +87,16 @@ export default function PeoplePage() {
 
   return (
     <div className="text-[#000022] py-10 pt-20 px-4">
-      {groups.map((group) => (
-        <div key={generateSlug(group.title)} className="mb-12">
-          <h1 className="text-4xl font-bold mb-6">{group.title}</h1>
+      {groups.map((group, groupIndex) => (
+        <div key={generateSlug(group.title, groupIndex)} className="mb-12">
+          <h2 className="text-4xl font-bold mb-6">{group.title}</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {group.members.map((member) => (
-              <div key={generateSlug(member.name)} className="flex items-center">
+            {group.members.map((member, memberIndex) => (
+              <div key={generateSlug(member.name, memberIndex)} className="flex items-center">
                 <div className="flex items-start gap-6">
                   <div className="w-32 h-32 flex-shrink-0">
                     <Image
-                      src={member.img}
+                      src={member.img || '/default-profile.jpg'}
                       alt={member.name}
                       width={128}
                       height={128}
@@ -103,7 +104,7 @@ export default function PeoplePage() {
                     />
                   </div>
                   <div>
-                    <a href={`/people/${generateSlug(member.name)}`}>
+                    <a href={`/people/${generateSlug(member.name, memberIndex)}`}>
                       <h3 className="font-bold text-2xl text-blue-600 hover:underline">
                         {member.name}
                       </h3>
