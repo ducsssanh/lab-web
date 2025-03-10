@@ -105,6 +105,13 @@ export default function PeoplePage() {
           about:
             "Enterprise cybersecurity expert, specializing in SIEM solutions, threat analytics, and AI-driven threat detection models.",
         },
+        {
+          name: "Nguyen Ngoc Tu (Chrish)",
+          role: "Research Assistant",
+          img: "people/NguyenNgocTu.jpeg",
+          about:
+            "Cloud security and automation expert with hands-on experience in Kubernetes, CI/CD, and infrastructure as code.",
+        },
       ],
     },
     {
