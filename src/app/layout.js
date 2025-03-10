@@ -24,18 +24,6 @@ export default function Layout({ children }) {
 
   return (
     <html lang="en">
-    <Head>
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FL93G3YHV"></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-9FL93G3YHV');
-          `}
-        </script>
-    </Head>
       <body className="min-h-screen flex flex-col">
         {/* Google Analytics Script */}
         <Script
@@ -74,16 +62,28 @@ export default function Layout({ children }) {
             {/* Desktop Menu */}
             <ul className="hidden lg:flex text-xl space-x-20">
               {["Home", "People", "Publications", "Join Us", "Contact"].map(
-                (item, index) => (
-                  <li key={index}>
-                    <Link
-                      href={`/${item.toLowerCase().replace(" ", "-")}`}
-                      className="text-[#000022] relative after:absolute after:left-0 after:bottom-[-6px] after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                )
+                (item, index) => {
+                  const formattedItem =
+                    item === "Home"
+                      ? "/"
+                      : item === "Join Us"
+                      ? "/join-us"
+                      : `/${item
+                          .toLowerCase()
+                          .replace(/s$/, "")
+                          .replace(" ", "-")}`;
+
+                  return (
+                    <li key={index}>
+                      <Link
+                        href={formattedItem}
+                        className="text-[#000022] relative after:absolute after:left-0 after:bottom-[-6px] after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      >
+                        {item}
+                      </Link>
+                    </li>
+                  );
+                }
               )}
             </ul>
           </div>
@@ -92,17 +92,29 @@ export default function Layout({ children }) {
           {menuOpen && (
             <ul className="lg:hidden mt-4 p-4 space-y-3 rounded-lg">
               {["Home", "People", "Publications", "Join Us", "Contact"].map(
-                (item, index) => (
-                  <li key={index}>
-                    <Link
-                      href={`/${item.toLowerCase().replace(" ", "-")}`}
-                      className="block text-[#000022]"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                )
+                (item, index) => {
+                  const formattedItem =
+                    item === "Home"
+                      ? "/"
+                      : item === "Join Us"
+                      ? "/join-us"
+                      : `/${item
+                          .toLowerCase()
+                          .replace(/s$/, "")
+                          .replace(" ", "-")}`;
+
+                  return (
+                    <li key={index}>
+                      <Link
+                        href={formattedItem}
+                        className="block text-[#000022]"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        {item}
+                      </Link>
+                    </li>
+                  );
+                }
               )}
             </ul>
           )}
