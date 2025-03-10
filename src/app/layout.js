@@ -3,21 +3,64 @@
 import "./globals.css";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react"; // Import icons từ lucide-react
-export { notFound } from 'next/navigation';
+import { Menu, X } from "lucide-react";
+import Script from "next/script"; // Import Script từ Next.js
+
+export { notFound } from "next/navigation";
 
 export default function Layout({ children }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(...args) {
+        window.dataLayer.push(args);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-9FL93G3YHV");
+    }
+  }, []);
+
   return (
     <html lang="en">
+    <Head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FL93G3YHV"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9FL93G3YHV');
+          `}
+        </script>
+    </Head>
       <body className="min-h-screen flex flex-col">
+        {/* Google Analytics Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-9FL93G3YHV"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9FL93G3YHV');
+          `}
+        </Script>
+
         {/* Navbar */}
         <nav className="fixed w-full top-0 z-50 bg-white px-6 shadow-md">
           <div className="max-w-6xl mx-auto flex justify-between items-center">
             {/* Logo */}
             <Link href="/" onClick={() => setMenuOpen(false)}>
-              <img src="/logo.jpg" alt="Vcyber Logo" className="w-80 h-20 object-cover transition-all duration-300" />
+              <img
+                src="/logo.jpg"
+                alt="Vcyber Logo"
+                className="w-80 h-20 object-cover transition-all duration-300"
+              />
             </Link>
 
             {/* Menu Button (Mobile) */}
@@ -30,62 +73,37 @@ export default function Layout({ children }) {
 
             {/* Desktop Menu */}
             <ul className="hidden lg:flex text-xl space-x-20">
-              <Link
-                href="/"
-                className="text-[#000022] relative 
-                            after:absolute after:left-0 after:bottom-[-6px] 
-                            after:w-full after:h-[3px] after:bg-[#f40000] 
-                            after:scale-x-0 after:origin-left after:transition-transform 
-                            after:duration-300 hover:after:scale-x-100"
-              >
-                Home
-              </Link>
-
-              <li>
-              <Link
-                href="/people"
-                className="text-[#000022] relative 
-                            after:absolute after:left-0 after:bottom-[-6px] 
-                            after:w-full after:h-[3px] after:bg-[#f40000] 
-                            after:scale-x-0 after:origin-left after:transition-transform 
-                            after:duration-300 hover:after:scale-x-100"
-              >
-                  People
-                </Link>
-              </li>
-              <li>
-              <Link
-                href="/publication"
-                className="text-[#000022] relative 
-                            after:absolute after:left-0 after:bottom-[-6px] 
-                            after:w-full after:h-[3px] after:bg-[#f40000] 
-                            after:scale-x-0 after:origin-left after:transition-transform 
-                            after:duration-300 hover:after:scale-x-100"
-              >
-                  Publications
-                </Link>
-              </li>
-              <li>
-              <Link
-                href="/contact"
-                className="text-[#000022] relative 
-                            after:absolute after:left-0 after:bottom-[-6px] 
-                            after:w-full after:h-[3px] after:bg-[#f40000] 
-                            after:scale-x-0 after:origin-left after:transition-transform 
-                            after:duration-300 hover:after:scale-x-100"
-              >
-                  Contact
-                </Link>
-              </li>
+              {["Home", "People", "Publications", "Join Us", "Contact"].map(
+                (item, index) => (
+                  <li key={index}>
+                    <Link
+                      href={`/${item.toLowerCase().replace(" ", "-")}`}
+                      className="text-[#000022] relative after:absolute after:left-0 after:bottom-[-6px] after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
           </div>
 
           {/* Mobile Menu */}
           {menuOpen && (
             <ul className="lg:hidden mt-4 p-4 space-y-3 rounded-lg">
-              <li><Link href="/people" className="block text-[#000022]" onClick={() => setMenuOpen(false)}>People</Link></li>
-              <li><Link href="/publication" className="block text-[#000022]" onClick={() => setMenuOpen(false)}>Publications</Link></li>
-              <li><Link href="/contact" className="block text-[#000022]" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+              {["Home", "People", "Publications", "Join Us", "Contact"].map(
+                (item, index) => (
+                  <li key={index}>
+                    <Link
+                      href={`/${item.toLowerCase().replace(" ", "-")}`}
+                      className="block text-[#000022]"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
           )}
         </nav>
@@ -94,28 +112,63 @@ export default function Layout({ children }) {
         <main className="flex-grow pt-20 px-4">{children}</main>
 
         {/* Footer */}
-        <footer className="relative bg-[#c10000] text-white py-10 px-6">
-          <div className="container mx-auto flex flex-col md:flex-row justify-between items-start">
-            <div className="md:w-1/4">
-              <img src="/footerlogo.png" alt="Vcyber Logo" className="w-32 mb-4" />
-              <p className="text-sm">Copyright © {new Date().getFullYear()} VinUni.</p>
+        <footer className="relative bg-[#c10000] text-white py-10 px-6 text-center sm:text-left">
+          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            {/* Logo & Copyright Section */}
+            <div className="md:w-1/4 text-center md:text-left">
+              <img
+                src="/footerlogo.png"
+                alt="Vcyber Logo"
+                className="w-32 mb-4 mx-auto md:mx-0"
+              />
+              <p className="text-sm">
+                Copyright © {new Date().getFullYear()} vcyber.
+              </p>
               <p className="text-sm">All Rights Reserved.</p>
-              <a href="/privacy-policy" className="text-sm underline">Privacy Policy</a>
+              <a href="/privacy-policy" className="text-sm underline">
+                Privacy Policy
+              </a>
             </div>
-            <div className="md:w-2/4 flex justify-around mt-6 md:mt-0">
+
+            {/* Footer Navigation Links */}
+            <div className="md:w-2/4 flex flex-col sm:flex-row justify-around mt-6 md:mt-0 gap-4 text-center sm:text-left">
               <ul className="space-y-2">
-                <li><Link href="/" className="hover:underline">Home</Link></li>
-                <li><Link href="/people" className="hover:underline">People</Link></li>
+                <li>
+                  <Link href="/" className="hover:underline">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/people" className="hover:underline">
+                    People
+                  </Link>
+                </li>
               </ul>
               <ul className="space-y-2">
-                <li><Link href="/publication" className="hover:underline">Publications</Link></li>
-                <li><Link href="/contact" className="hover:underline">Contact</Link></li>
+                <li>
+                  <Link href="/publication" className="hover:underline">
+                    Publications
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/join-us" className="hover:underline">
+                    Join us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="hover:underline">
+                    Contact
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
-          <button 
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} 
-            className="absolute bottom-4 right-4 bg-white text-[#1E3A8A] p-2 rounded-full shadow-lg hover:bg-gray-200">
+
+          {/* Scroll-to-Top Button */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="fixed bottom-6 right-6 bg-white text-[#1E3A8A] p-3 rounded-full shadow-lg hover:bg-gray-200"
+          >
             ⬆️
           </button>
         </footer>
