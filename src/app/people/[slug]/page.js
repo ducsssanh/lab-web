@@ -148,6 +148,20 @@ With a passion for bridging security research and real-world defense mechanisms,
 `,
   },
 
+  'nguyen-ngoc-tu': {
+    name: 'Nguyễn Ngọc Tú',
+    position: 'Research Assistant',
+    imageUrl: '/people/NguyenNgocTu.jpeg',
+    description: `Nguyen Ngoc Tu (Chrish) is a Junior DevSecOps Engineer with expertise in cloud security, CI/CD pipeline development, and infrastructure automation. He has over three years of experience working with cloud platforms such as AWS and Azure, container orchestration with Kubernetes and Docker, and automation tools like Terraform and Ansible.
+
+Tu holds a degree in Communications and Computer Networks from the University of Information Technology HCM, where he achieved a GPA of 7.75. His technical skills include cloud security, infrastructure as code, monitoring and logging solutions, and programming in Python, Bash, and Rust.
+
+Currently working at TMA Solutions, he is responsible for maintaining and upgrading Kubernetes clusters, designing and optimizing CI/CD pipelines, managing cloud infrastructure using Terraform, and implementing monitoring solutions with Prometheus, Grafana, and ELK Stack. His work also extends to research and development of anomaly detection models for application logs in AKS and Splunk.
+
+Certified in DevNet Associate (Cisco) and Microsoft Azure Fundamentals, Tu is dedicated to advancing security automation and cost-efficient cloud operations. His interests lie in cloud-native security architectures, DevSecOps methodologies, and AI-driven infrastructure monitoring.
+`,
+  },
+
   // DISTINGUISHED RESEARCH FELLOWS 
   'dr-keshav-sood': {
     name: 'Dr. Keshav Sood',
