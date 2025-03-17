@@ -168,7 +168,7 @@ Certified in DevNet Associate (Cisco) and Microsoft Azure Fundamentals, Tu is de
 
   'pham-ngoc-van': {
     name: 'Phạm Ngọc Vân',
-    position: 'Research Assistant',
+    position: 'Graduate Researcher',
     imageUrl: '/people/phamngocvan.jpg',
     description: `Phạm Ngọc Vân is a cybersecurity engineer with expertise in Threat Hunting, Malware Analysis, and Security Research with experience in cloud and on-premise security (AWS, GCP, Kubernetes).
 
@@ -180,7 +180,7 @@ He is part of a research lab working on the application of Machine Learning in a
 
   'michael-oduro-antwi': {
     name: 'Michael Oduro-Antwi',
-    position: 'Research Assistant',
+    position: 'Graduate Researcher',
     imageUrl: '/people/michael_oduro_antwi.jpg',
     description: `Michael Oduro-Antwi is a results-driven Information Technology Leader with more than 18 years of work experience. 
 
