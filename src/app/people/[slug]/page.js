@@ -106,15 +106,15 @@ His go-to challenges are usually pwn and rev, but when they’re too hard, He’
     description: `Le Vu Anh, also known as Luffy, is a Research Associate at VCyber Lab, VinUniversity. His research focuses on advancing quantum information science with a special emphasis on:
     • Quantum Algorithms
     • Quantum Cryptography
-    • Post-Quantum Cryptography
+    • Quantum-Resistant Cryptographic Protocols
     
     Under the supervision of Prof. Tony Nguyen and in collaboration with Prof. Sushmita Ruj at the University of New South Wales and Prof. Lei Pan at Deakin University, his work is dedicated to advancing both the theoretical foundations and practical implementations of quantum-resistant cryptographic protocols in a post-quantum era.
     
-    Le has contributed to quantum algorithm design, analyzed computational hardness in quantum settings, and investigated cryptographic primitives resilient against quantum attacks. His work has been featured in IEEE publications and supported by patented innovations.
+    Luffy has contributed to quantum algorithm design, analyzed computational hardness in quantum settings, and investigated cryptographic primitives resilient against quantum attacks. His work has been featured in IEEE publications and supported by patented innovations.
     
     He holds a Bachelor of Science in Mathematics from Beloit College, where he built a strong foundation in algorithmic theory and mathematical analysis, further honed through research internships at Google, MIT, and the University of Tokyo.
     
-    Connect with him on [LinkedIn](https://www.linkedin.com/in/luffyle) or visit his personal website at [csplevuanh.github.io](https://csplevuanh.github.io/vu-anhle/).`
+    Connect with him on LinkedIn (https://www.linkedin.com/in/luffyle) or visit his personal website (https://csplevuanh.github.io/vu-anhle).`
   },
 
   // RESEARCH ASSISTANTS
