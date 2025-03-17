@@ -91,7 +91,7 @@ export default function PeoplePage() {
           role: "Research Associate",
           img: "people/LuffyLe.jpg",
           about:
-            "Algorithms and quantum information science expert, working on quantum algorithms and quantum-resistant cryptographic protocols.",
+            "Algorithms and quantum information science expert, working on quantum algorithms, quantum cryptography, and quantum-resistant cryptographic protocols.",
         },
       ],
     },
