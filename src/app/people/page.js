@@ -50,14 +50,14 @@ export default function PeoplePage() {
         },
         {
           name: "Pham Ngoc Van",
-          role: "Research Assistant",
+          role: "Graduate Researcher",
           img: "people/phamngocvan.jpg",
           about:
             "Threat Hunting, Malware Analysis, and Security Research with experience in cloud and on-premise security",
         },
         {
           name: "Michael Oduro-Antwi ",
-          role: "Research Assistant",
+          role: "Graduate Researcher",
           img: "people/michael_oduro_antwi.jpg",
           about:
             "Results-driven IT leader with over 18 years of experience, passionate about leveraging emerging technologies to build future-ready organizations.",
