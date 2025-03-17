@@ -48,6 +48,20 @@ export default function PeoplePage() {
           about:
             "Expert in network security and secure system architecture. 14 years of experience, CEH-certified, and part-time lecturer.",
         },
+        {
+          name: "Pham Ngoc Van",
+          role: "Research Assistant",
+          img: "people/phamngocvan.jpg",
+          about:
+            "Threat Hunting, Malware Analysis, and Security Research with experience in cloud and on-premise security",
+        },
+        {
+          name: "Michael Oduro-Antwi ",
+          role: "Research Assistant",
+          img: "people/michael_oduro_antwi.jpg",
+          about:
+            "Results-driven IT leader with over 18 years of experience, passionate about leveraging emerging technologies to build future-ready organizations.",
+        }
       ],
     },
     {
@@ -111,20 +125,6 @@ export default function PeoplePage() {
           img: "people/NguyenNgocTu.jpeg",
           about:
             "Cloud security and automation expert with hands-on experience in Kubernetes, CI/CD, and infrastructure as code.",
-        },
-        {
-          name: "Pham Ngoc Van",
-          role: "Research Assistant",
-          img: "people/phamngocvan.jpg",
-          about:
-            "Threat Hunting, Malware Analysis, and Security Research with experience in cloud and on-premise security",
-        },
-        {
-          name: "Michael Oduro-Antwi ",
-          role: "Research Assistant",
-          img: "people/michael_oduro_antwi.jpg",
-          about:
-            "Results-driven IT leader with over 18 years of experience, passionate about leveraging emerging technologies to build future-ready organizations.",
         }
       ],
     },
