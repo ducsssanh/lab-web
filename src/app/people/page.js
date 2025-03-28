@@ -88,7 +88,7 @@ export default function PeoplePage() {
       members: [
         {
           name: "Vu Anh Le (Luffy Le)",
-          role: "Research Associate",
+          role: "Research Scientist",
           img: "people/LuffyLe.jpg",
           about:
             "Algorithms and quantum information science expert, working on quantum algorithms, quantum cryptography, and quantum-resistant cryptographic protocols.",
