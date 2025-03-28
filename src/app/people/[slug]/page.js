@@ -101,7 +101,7 @@ His go-to challenges are usually pwn and rev, but when they’re too hard, He’
   // RESEARCH SCIENTIST
   'vu-anh-le': {
     name: 'Le Vu Anh (Luffy)',
-    position: 'Research Associate',
+    position: 'Research Scientist',
     imageUrl: '/people/LuffyLe.jpg',
     description: `Le Vu Anh, also known as Luffy, is a Research Scientist at VCyber Lab, VinUniversity. His research focuses on advancing quantum information science with a special emphasis on:
     • Quantum Algorithms
