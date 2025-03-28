@@ -84,7 +84,7 @@ export default function PeoplePage() {
       ],
     },
     {
-      title: "RESEARCH ASSOCIATE",
+      title: "RESEARCH SCIENTIST",
       members: [
         {
           name: "Vu Anh Le (Luffy Le)",
