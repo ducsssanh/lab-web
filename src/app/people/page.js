@@ -129,6 +129,18 @@ export default function PeoplePage() {
       ],
     },
     {
+      title: "AFFILIATED PHD RESEARCHERS",
+      members: [
+        {
+          name: "Dang Kien Nguyen",
+          role: "Affiliated PhD Researcher",
+          img: "people/DangKienNguyen.jpg",
+          about:
+            "Cybersecurity researcher specializing in air interface security for 5.5G/6G networks. PhD candidate at EURECOM and Sorbonne Université with industry experience at Ericsson and recognized through awards and publications.",
+        },
+      ],
+    },
+    {
       title: "DISTINGUISHED RESEARCH FELLOWS",
       members: [
         {

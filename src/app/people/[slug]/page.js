@@ -165,7 +165,6 @@ Currently working at TMA Solutions, he is responsible for maintaining and upgrad
 Certified in DevNet Associate (Cisco) and Microsoft Azure Fundamentals, Tu is dedicated to advancing security automation and cost-efficient cloud operations. His interests lie in cloud-native security architectures, DevSecOps methodologies, and AI-driven infrastructure monitoring.
 `,
   },
-
   'pham-ngoc-van': {
     name: 'Phạm Ngọc Vân',
     position: 'Graduate Researcher',
@@ -187,6 +186,19 @@ He is part of a research lab working on the application of Machine Learning in a
 He played a key role in achieving ISO 27001 certification with Nestlé’s Central West Africa Region (CWAR) through his direct efforts from 2014 to 2020. Michael has a proven track record of executing cybersecurity awareness programs that support an organization's mission, culture, and IT infrastructure. 
 
 He is proficient in navigating the intersection of business, technology, and human behavior and is passionate about integrating emerging technologies to create future-ready organizations.
+`,
+
+  //AFFILIATED PHD RESEARCHERS
+  },
+  'dang-kien-nguyen': {
+    name: 'Dang Kien Nguyen',
+    position: 'Affiliated PhD Researcher',
+    imageUrl: '/people/DangKienNguyen.jpg',
+    description: `Dang Kien Nguyen is a dedicated cybersecurity expert with a robust academic and professional background in the field. He is currently a PhD candidate at EURECOM and Sorbonne Université, where he conducts groundbreaking research on securing air interfaces in 5.5G/6G networks. His academic journey includes dual Master's degrees in Cybersecurity from Université Libre de Bruxelles and Complex Systems/IoT Cybersecurity from Université Bretagne-Sud, both completed with distinction.
+
+Kien's professional experience spans several high-impact roles, including his current position as a Researcher at Ericsson, where he focuses on developing simulation tools and systems to detect and mitigate security threats in next-generation telecommunication networks. His earlier roles include a 5G Security Internship at Ericsson, where he pioneered detection systems for air interface attacks, and a Cybersecurity Research Internship at Université de Sherbrooke, where he analyzed 5G authentication traffic.
+
+He has also worked as a Cybersecurity Research Engineer at HCL Vietnam, researching security for autonomous vehicles, and as a Penetration Tester at CyRadar, uncovering vulnerabilities in web and mobile applications. Kien's academic and professional achievements have earned him several accolades, such as the Erasmus Mundus Joint Master Scholarship and the Best Industrial Paper Award. His expertise is further demonstrated through his publications, presentations, and certifications, which highlight his commitment to advancing cybersecurity research and practice.
 `,
   },
 
