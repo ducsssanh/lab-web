@@ -14,8 +14,7 @@ export default function PeoplePage() {
           name: "Dr. Dinh Duc Nha Nguyen (Tony/Nhã)",
           role: "Principal Investigator, Founder | Assistant Professor, VinUniversity",
           img: "people/nha.jpg",
-          about:
-            "Specializing in Post-Quantum Cryptography (PQC), AI-driven cybersecurity, and IoT security. Advisor for PSI Testing and Certification, bridging research with real-world security applications.",
+          about: "Leads the lab’s new direction in symbolic AI and reasoning-centric models. His current focus is on building interpretable AI systems that integrate mathematical logic, optimization, and human-aligned reasoning for trustworthy deployment across complex domains.",
         },
       ],
     },
@@ -26,60 +25,7 @@ export default function PeoplePage() {
           name: "Dr. Le Duy Dung (Andrew)",
           role: "Associate Investigator",
           img: "people/LeDuyDung.jpg",
-          about:
-            "AI-driven cybersecurity and federated learning researcher. Former Senior Data Scientist at Grab, published in top-tier AI conferences.",
-        },
-      ],
-    },
-    {
-      title: "GRADUATE RESEARCHERS",
-      members: [
-        {
-          name: "Van Dong Bui (Will Bui)",
-          role: "Graduate Researcher",
-          img: "people/will_bui.jpeg",
-          about:
-            "Specialist in cyber threat intelligence, OSINT, and penetration testing. Senior Cybersecurity Analyst at Lynden Group, founder of 'Take Them Down' project.",
-        },
-        {
-          name: "Mai Do Thi Ngoc (Mia Do)",
-          role: "Graduate Researcher",
-          img: "people/MiaDo.jpg",
-          about:
-            "Expert in network security and secure system architecture. 14 years of experience, CEH-certified, and part-time lecturer.",
-        },
-        {
-          name: "Pham Ngoc Van",
-          role: "Graduate Researcher",
-          img: "people/phamngocvan.jpg",
-          about:
-            "Threat Hunting, Malware Analysis, and Security Research with experience in cloud and on-premise security",
-        },
-        {
-          name: "Michael Oduro-Antwi ",
-          role: "Graduate Researcher",
-          img: "people/michael_oduro_antwi.jpg",
-          about:
-            "Results-driven IT leader with over 18 years of experience, passionate about leveraging emerging technologies to build future-ready organizations.",
-        }
-      ],
-    },
-    {
-      title: "MASTER'S STUDENTS",
-      members: [
-        {
-          name: "Le Quoc Dung",
-          role: "Master's student",
-          img: "people/LeQuocDung.jpg",
-          about:
-            "Cryptography expert with a focus on symmetric key encryption and post-quantum security. Gold Medalist in NSUCRYPTO 2024.",
-        },
-        {
-          name: "Nguyen Dinh Cuong",
-          role: "Master's student",
-          img: "people/NguyenDinhCuong.jpg",
-          about:
-            "Researcher in software and system security, automated program analysis, and binary security. Top contestant in CTFs and programming contests.",
+          about: "Specialist in federated learning and distributed knowledge systems. His recent work explores decentralized symbolic inference and collaborative reasoning among AI agents in edge and cloud environments.",
         },
       ],
     },
@@ -90,8 +36,53 @@ export default function PeoplePage() {
           name: "Vu Anh Le (Luffy Le)",
           role: "Research Scientist",
           img: "people/LuffyLe.jpg",
-          about:
-            "Algorithms and quantum information science expert, working on quantum algorithms, quantum cryptography, and quantum-resistant cryptographic protocols.",
+          about: "Works in algorithmic reasoning and cognitive-inspired symbolic computation. Designing lightweight, deterministic reasoning engines for embedded intelligent systems.",
+        },
+      ],
+    },
+    {
+      title: "GRADUATE RESEARCHERS",
+      members: [
+        {
+          name: "Van Dong Bui (Will Bui)",
+          role: "Graduate Researcher",
+          img: "people/will_bui.jpeg",
+          about: "Researches intelligent system diagnostics using reasoning-based anomaly detection. Currently exploring OSINT reasoning agents and symbolic interpretability in decision-critical systems.",
+        },
+        {
+          name: "Mai Do Thi Ngoc (Mia Do)",
+          role: "Graduate Researcher",
+          img: "people/MiaDo.jpg",
+          about: "Designs robust system architectures for AI agents that reason through complex event patterns. Passionate about embedding logic engines within critical infrastructure systems.",
+        },
+        {
+          name: "Pham Ngoc Van",
+          role: "Graduate Researcher",
+          img: "people/phamngocvan.jpg",
+          about: "Working on adversarial robustness in reasoning agents and counterfactual analysis in symbolic inference models.",
+        },
+        {
+          name: "Michael Oduro-Antwi",
+          role: "Graduate Researcher",
+          img: "people/michael_oduro_antwi.jpg",
+          about: "Focused on organizational deployment of intelligent AI systems. Explores strategic integration of logical AI into enterprise workflows, emphasizing efficiency and transparency.",
+        },
+      ],
+    },
+    {
+      title: "MASTER'S STUDENTS",
+      members: [
+        {
+          name: "Le Quoc Dung",
+          role: "Master’s Student",
+          img: "people/LeQuocDung.jpg",
+          about: "Specializes in symbolic and mathematical reasoning in AI models, including algebraic logic, graph-based deduction, and formal verification of reasoning chains.",
+        },
+        {
+          name: "Nguyen Dinh Cuong",
+          role: "Master’s Student",
+          img: "people/NguyenDinhCuong.jpg",
+          about: "Researches automated code understanding and program reasoning using symbolic execution and logic-enhanced language models.",
         },
       ],
     },
@@ -102,30 +93,26 @@ export default function PeoplePage() {
           name: "Tran Duc Anh",
           role: "Research Assistant",
           img: "people/TranDucAnh.jpg",
-          about:
-            "Network security, vulnerability research, and malware analysis specialist with a focus on web security and Kubernetes/cloud security.",
+          about: "Explores system-level design for interpretable reasoning AI in real-time decision architectures, focusing on modular deployment in containerized environments.",
         },
         {
           name: "Nguyen Hoang Anh",
           role: "Research Assistant",
           img: "people/NguyenHoangAnh.jpg",
-          about:
-            "Network security and cryptography expert with hands-on experience in threat intelligence and secure protocols.",
+          about: "Investigating secure symbolic communication protocols between AI agents, with emphasis on verifiable reasoning.",
         },
         {
           name: "Vo Hoang Khanh",
           role: "Research Assistant",
           img: "people/VoHoangKhanh.jpg",
-          about:
-            "Enterprise cybersecurity expert, specializing in SIEM solutions, threat analytics, and AI-driven threat detection models.",
+          about: "Applies data analytics to derive rule-based inference systems for enterprise intelligence. Current work involves SIEM integration with logic-based anomaly classifiers.",
         },
         {
           name: "Nguyen Ngoc Tu (Chrish)",
           role: "Research Assistant",
           img: "people/NguyenNgocTu.jpeg",
-          about:
-            "Cloud security and automation expert with hands-on experience in Kubernetes, CI/CD, and infrastructure as code.",
-        }
+          about: "Focuses on CI/CD automation for reasoning model deployment, with expertise in orchestrating logic inference services within scalable cloud-native environments.",
+        },
       ],
     },
     {
@@ -135,8 +122,7 @@ export default function PeoplePage() {
           name: "Dang Kien Nguyen",
           role: "Affiliated PhD Researcher",
           img: "people/DangKienNguyen.jpg",
-          about:
-            "Cybersecurity researcher specializing in air interface security for 5.5G/6G networks. PhD candidate at EURECOM and Sorbonne Université with industry experience at Ericsson and recognized through awards and publications.",
+          about: "Researches symbolic AI architectures for next-generation network interfaces. Explores hybrid protocol stacks enhanced by machine reasoning for resilient and adaptive network behavior.",
         },
       ],
     },
@@ -145,24 +131,21 @@ export default function PeoplePage() {
       members: [
         {
           name: "Dr. Keshav Sood",
-          role: "IoT & AI in cybersecurity",
+          role: "Distinguished Research Fellow",
           img: "people/KeshavSood.jpg",
-          about:
-            "Senior Lecturer at Deakin University with expertise in IoT and AI-driven cybersecurity. Research focused on SDN security and innovative network defense strategies.",
+          about: "Investigates reasoning-enabled control systems in IoT environments. Current research focuses on real-time rule engines embedded in sensor networks and adaptive edge agents.",
         },
         {
           name: "Dr. Syed Wajid Ali Shah",
-          role: "PQC",
+          role: "Distinguished Research Fellow",
           img: "people/AliShah.jpg",
-          about:
-            "Casual Research Fellow at Deakin University’s Centre for Cyber Resilience and Trust, specializing in post-quantum cryptography and advanced security frameworks.",
+          about: "Explores formal logic frameworks and algebraic models for post-classical AI systems, with an emphasis on symbolic safety guarantees.",
         },
         {
           name: "Thai Mai Thanh",
-          role: "Robotics",
+          role: "Distinguished Research Fellow",
           img: "people/Thai-Mai-Thanh.png",
-          about:
-            "Assistant Professor of Mechanical Engineering at the College of Engineering and Computer Science, VinUniversity.",
+          about: "Applies reasoning AI to robotic decision-making. Investigating structured planning algorithms and logic-based control systems in autonomous agents.",
         },
       ],
     },
@@ -173,15 +156,13 @@ export default function PeoplePage() {
           name: "Assoc. Prof. Lei Pan",
           role: "Scientific Advisor | Associate Professor, Deakin University",
           img: "people/LeiPan.jpg",
-          about:
-            "Leading researcher in Post-Quantum Cryptography and distributed computing security, working on quantum-resilient algorithms.",
+          about: "Expert in formal methods and distributed logic systems. Advises on algebraic reasoning and logic protocol design in multi-agent inference systems.",
         },
         {
           name: "Prof. Yong Xiang",
           role: "Scientific Advisor | Professor of Network Engineering, Deakin University",
           img: "people/YongXiang.jpg",
-          about:
-            "Director of the Trustworthy Intelligent Computing Lab with extensive publications and research on AI-driven cybersecurity and blockchain.",
+          about: "Leads research on trusted intelligent computing. Special focus on scalable symbolic inference engines and explainable logic reasoning in AI networks.",
         },
       ],
     },
