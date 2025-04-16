@@ -1,4 +1,3 @@
-// --- unchanged imports and setup ---
 "use client";
 export { notFound } from 'next/navigation';
 import { motion } from 'framer-motion';
@@ -92,10 +91,16 @@ export default function Home() {
         </h1>
 
         <motion.p className="mt-6 text-base sm:text-lg text-[#191938]" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
-          At <span className="text-[#c10000] font-semibold">VCyber</span>, we are pioneering a new paradigm in artificial intelligence—developing systems that not only process data but also reason, deduce, and make informed decisions...
+          At <span className="text-[#c10000] font-semibold">VCyber</span>, we are pioneering a new paradigm in artificial intelligence—developing systems that not only process data but also reason, deduce, and make informed decisions. While current trends in Large Language Models have overemphasized their statistical fluency, they often lack true reasoning capabilities—leading to unreliable outputs and hallucinated results. Our mission is to invent alternative AI models and algorithms that emulate human-like reasoning and enable them to solve complex challenges across engineering physics and system design with optimized efficiency.
         </motion.p>
 
-        {/* ...other intro paragraphs unchanged... */}
+        <motion.p className="mt-4 text-base sm:text-lg text-[#191938]" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true }}>
+          Our interdisciplinary team, including backgrounds from computer science, electrical engineering, and applied mathematics, is dedicated to developing AI models that emulate human-like reasoning. By enforcing symbolic logic in a machine learning framework, we aim to create AI solutions capable of tackling complex, real-world problems with transparency and efficiency. Our research spans from foundational algorithm development to practical applications, all centered around enhancing the reasoning capabilities of AI systems.
+        </motion.p>
+
+        <motion.p className="mt-4 text-base sm:text-lg text-[#191938]" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.4 }} viewport={{ once: true }}>
+          By focusing on reasoning capabilities, we aim to push the boundaries of what AI can achieve, ensuring that our systems are not only intelligent but also trustworthy and adaptable to the ever-evolving technological landscape.
+        </motion.p>
       </section>
 
       <section className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-12">
