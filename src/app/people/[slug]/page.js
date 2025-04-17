@@ -3,145 +3,167 @@
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 
+/*
+  NOTE:  This file is **auto‑generated** from the latest People[Vu‑Anh updates].docx
+  All biographical texts are kept verbatim (only markdown formatting removed) so that
+  no information is lost, as requested.
+*/
+
 const teamMembers = {
+  // ────────────────────────────────────────────────────────────────────────────
+  //  Core Lab Leadership
+  // ────────────────────────────────────────────────────────────────────────────
   'dr-dinh-duc-nha-nguyen': {
     name: 'Dr. Dinh Duc Nha Nguyen',
     position: 'Principal Investigator, Founder | Assistant Professor, VinUniversity',
     imageUrl: '/people/nha.jpg',
-    website: 'https://ducnha.work/',
-    description: `Dr. Dinh Duc Nha Nguyen (Tony/Nhã) is the Principal Investigator and Founder of the Cyber-Reasoning Lab at VinUniversity, leading pioneering work in symbolic AI, mathematical logic, and interpretable reasoning systems. His research focuses on building AI models that can reason, deduce, and explain, with applications across engineering physics, secure systems, and intelligent automation.
+    website: 'https://ndducnha.github.io/my-website/',
+    description: `Dr. Dinh Duc Nha Nguyen is the Principal Investigator and Founder of **VCyber Lab** at VinUniversity, specialising in **Post‑Quantum Cryptography (PQC)**, **AI‑driven cybersecurity**, and **IoT & robotic security**.
 
-He has contributed to foundational algorithms for symbolic inference, hybrid neuro-symbolic models, and efficient logic engines for embedded systems. Dr. Nguyen advocates for transparency and robustness in AI, emphasizing the development of models aligned with human reasoning.
+His research focuses on developing next‑generation cryptographic solutions, AI‑powered cyber‑defence systems, and quantum‑resilient security frameworks to address the evolving challenges of quantum computing, AI‑driven cyber threats, and IoT vulnerabilities.
 
-As an academic leader, he has published in top AI venues and mentors an interdisciplinary team in developing frameworks that integrate logic programming, cognitive modeling, and constraint-based reasoning. His work bridges theoretical advances and practical deployments in real-world decision systems.`
+Dr. Nguyen has extensive academic and industry experience, publishing in top‑tier security venues and collaborating with partners to advance quantum‑safe cryptography, intelligent security automation, and AI‑driven threat detection. His contributions span securing next‑generation networks, enhancing privacy‑preserving cryptography, and building autonomous cybersecurity solutions.
+
+Beyond academia, Dr. Nguyen is **Expert Advisor for PSI Testing & Certification (Vietnam)**, providing guidance on cybersecurity compliance, risk assessment, and secure system integration for electrical‑electronic industries. He is passionate about mentoring interdisciplinary teams and driving innovation in PQC, AI‑enhanced defence mechanisms, and IoT security.`,
   },
 
-  'dr-le-duy-dung': {
-    name: 'Dr. Le Duy Dung (Andrew)',
-    position: 'Associate Investigator',
-    imageUrl: '/people/LeDuyDung.jpg',
-    website: 'https://andrew-dungle.github.io',
-    description: `Dr. Le Duy Dung is an expert in distributed reasoning and collaborative symbolic inference. His research investigates decentralized knowledge processing, federated reasoning protocols, and logical consensus models across AI agents operating in edge-cloud systems. He previously led projects on distributed learning and now focuses on multi-agent reasoning ecosystems.`
-  },
-
-  'vu-anh-le': {
-    name: 'Le Vu Anh (Luffy)',
-    position: 'Research Scientist',
-    imageUrl: '/people/LuffyLe.jpg',
-    description: `Le Vu Anh (Luffy) works on algorithmic reasoning, symbolic inference, and lightweight deterministic reasoning engines. With a background in quantum theory and mathematical logic, his current focus is on building interpretable reasoning modules for embedded AI systems and scalable symbolic solvers.`
-  },
-
+  // ────────────────────────────────────────────────────────────────────────────
+  //  Graduate Researchers & Research Scientists
+  // ────────────────────────────────────────────────────────────────────────────
   'van-dong-bui': {
     name: 'Van Dong Bui (Will Bui)',
     position: 'Graduate Researcher',
     imageUrl: '/people/will_bui.jpeg',
-    description: `Van Dong Bui explores intelligent diagnostics and symbolic interpretability in decision-critical systems. His current work involves logic-based anomaly detection, OSINT reasoning agents, and formal specification tools for trustworthy AI applications.`
+    description: `Van Dong Bui is a Graduate Researcher at VCyber Lab specialising in **cyber threat intelligence, OSINT, penetration testing, and digital risk protection**. With years of experience across governmental and private sectors, he has actively fought cyber‑criminal actors through consulting, red‑team assessments, and digital forensics.
+
+• **Previous roles**: Senior Cybersecurity Analyst at Lynden Group; Investigator at Group‑IB safeguarding banks and crypto platforms; Cybercrime Investigator for law‑enforcement solving 200+ cases.
+• **Education**: M.S. in Cyber Security Analysis (Macquarie University, Australia); B.S. in Cyber Crime Investigation (People’s Police Academy, Vietnam).
+• **Highlights**: Top 1 % hacking player on TryHackMe; founder of *Take Them Down* non‑profit protecting Vietnamese users.
+
+At VCyber Lab he builds reasoning‑augmented threat‑intel pipelines, red‑team simulation tooling, and logic‑driven fraud detection.`,
   },
 
   'mai-do-thi-ngoc': {
     name: 'Mai Do Thi Ngoc (Mia Do)',
     position: 'Graduate Researcher',
     imageUrl: '/people/MiaDo.jpg',
-    description: `Mai Do designs robust system architectures for AI agents that reason through complex event patterns. Her interests lie in integrating symbolic logic into critical infrastructure systems and building logic-based decision engines for adaptive real-time systems.`
+    description: `Mai Do is a Graduate Researcher with **14 years of experience** in telecommunications, software engineering, and cybersecurity. Her focus areas include **secure network design, penetration testing, and system optimisation**.
+
+Before joining the lab she spent six years deploying telco infrastructure security, then eight years developing secure backend systems and automation tooling. She holds a Master’s in Telecommunications, the Certified Ethical Hacker (CEH) credential, and has lectured network security at Cao Thắng College and Ho Chi Minh City University of Transport.
+
+Her current projects integrate symbolic logic with practical network‑defence strategies for critical infrastructure.`,
   },
 
   'le-quoc-dung': {
     name: 'Lê Quốc Dũng',
-    position: 'Graduate Researcher',
+    position: 'Master’s Student',
     imageUrl: '/people/LeQuocDung.jpg',
-    description: `Lê Quốc Dũng specializes in algebraic logic, graph deduction, and mathematical reasoning in symbolic AI. He has worked on Boolean logic verification, deduction chains, and participates in international mathematics and algorithmic reasoning competitions.`
+    description: `Lê Quốc Dũng is pursuing an M.S. in Information Security at Moscow Engineering Physics Institute after a B.S. from Moscow Power Engineering Institute. He specialises in **cryptography, symmetric key encryption, and post‑quantum security**.
+
+• Research in Boolean functions, cryptanalysis, and GPU‑accelerated implementations of Russian ciphers (Magma, Kuznechik).
+• Bachelor thesis: side‑channel cryptanalysis via power consumption.
+• **Awards**: Gold Medal NSUCRYPTO 2024; multiple medals in international mathematics & crypto olympiads.
+
+He contributes formally verified symmetric algorithms and high‑performance CUDA kernels to the lab’s PQC toolkit.`,
   },
 
   'nguyen-dinh-cuong': {
     name: 'Nguyễn Đình Cường',
-    position: 'Graduate Researcher',
+    position: 'Master’s Student',
     imageUrl: '/people/NguyenDinhCuong.jpg',
-    description: `Nguyen Dinh Cuong researches symbolic execution, automated code reasoning, and logic-enhanced program analysis. A strong CTF competitor and teaching assistant in formal methods, he integrates symbolic interpreters into code security analysis and AI-driven compilers.`
+    description: `M.S. student in Computer & Information Science at the University of Pennsylvania and researcher at VCyber Lab. His expertise covers **software & system security, automated program analysis, and binary vulnerability detection**.
+
+Previously a Research Intern at Systems Security Lab (Sungkyunkwan University), he helped develop automated security analysis tools.
+
+**Key achievements**:
+• Top 10, Bosch CodeRace CTF 2023  
+• 17th, vikeCTF 2023  
+• 1st Prize, CECS Day 2022 (VinUniversity)  
+• 3rd Prize, ICPC Vietnam 2020  
+• VinUniversity Merit Scholar & MOET National Science Contest laureate.
+
+Current goal: AI‑driven exploit mitigation and logic‑based binary hardening frameworks.`,
+  },
+
+  'vu-anh-le': {
+    name: 'Vũ Anh Lê (Luffy Le)',
+    position: 'Research Scientist',
+    imageUrl: '/people/LuffyLe.jpg',
+    description: `Vũ Anh Lê is a Research Scientist with expertise in **algorithm design, mathematical modelling, and machine‑learning‑for‑security**. He holds a B.S. in Mathematics from Beloit College (USA) and has interned at Google Research and MIT.
+
+**Research contributions**:
+• Post‑Quantum Cryptographic Security Models – novel mathematics for quantum‑safe algorithms.  
+• Computational Security Analysis – complex analysis, topology, and differential equations for stronger crypto.  
+• AI‑Driven Cyber‑Defence – deep learning & topology for threat detection and adversarial robustness.
+
+Proficient in Python, C++, Haskell, and proof assistants (Coq, Isabelle, Lean), he advances mathematically rigorous security models for reasoning AI.`,
   },
 
   'tran-duc-anh': {
     name: 'Trần Đức Anh',
     position: 'Research Assistant',
     imageUrl: '/people/TranDucAnh.jpg',
-    description: `Tran Duc Anh explores system-level design for interpretable reasoning AI, including deployment of logic engines in modular and containerized environments. He contributes to logic inference libraries and distributed rule processing.`
+    description: `Research Assistant focused on **network security, vulnerability research, and malware analysis**. Undergraduate in Computer Networks & Data Communication at VNU UET.
+
+Experience includes Rust library fuzzing, Kubernetes security (eBPF/Cilium), and AI‑enhanced threat analysis. Skilled in C/C++, Python, Rust, and web pentest toolchains (Burp Suite, Nmap, Wireshark). He aims to embed logic‑based automation into modern cloud security.`,
   },
 
   'nguyen-hoang-anh': {
     name: 'Nguyễn Hoàng Anh',
     position: 'Research Assistant',
     imageUrl: '/people/NguyenHoangAnh.jpg',
-    description: `Nguyen Hoang Anh studies secure symbolic protocols for AI agents, emphasizing verifiable reasoning and integrity-preserving message exchange among distributed intelligent agents.`
+    description: `Fourth‑year Cybersecurity student at Hanoi University of Science & Technology. He specialises in **network security, cryptography, and SOC operations**, with experience at Viettel Cyber Security and the Vietnam National Cyber Security Center.
+
+Projects span secure authentication, network IDS, and post‑quantum key exchange. Skilled in NIST/CIS frameworks, Cisco ASA, and IPTables, he bridges theoretical crypto with operational defences.`,
   },
 
   'vo-hoang-khanh': {
     name: 'Võ Hoàng Khanh',
     position: 'Research Assistant',
     imageUrl: '/people/VoHoangKhanh.jpg',
-    description: `Vo Hoang Khanh works on enterprise rule-based inference systems, designing logic classifiers for threat detection and decision support systems using symbolic logic frameworks.`
+    description: `Specialist in **enterprise cybersecurity, SIEM deployment, and threat analytics**. Holds a degree in Information Security from UIT (VNU‑HCM) and industry experience at VNCS & DTG Technology.
+
+Expertise: endpoint security (SentinelOne, TrendMicro), PAM (BeyondTrust), DLP (Zecurion) plus Splunk‑based analytics. Current research focuses on AI‑driven malware detection, WAF automation (ModSecurity), and compliance frameworks for critical infrastructure.`,
   },
 
-  'nguyen-ngoc-tu': {
-    name: 'Nguyễn Ngọc Tú',
-    position: 'Research Assistant',
-    imageUrl: '/people/NguyenNgocTu.jpeg',
-    description: `Nguyen Ngoc Tu focuses on DevOps for logic inference services. He specializes in CI/CD automation of reasoning models, deploying symbolic inference engines in cloud-native infrastructures.`
-  },
-
-  'pham-ngoc-van': {
-    name: 'Phạm Ngọc Vân',
-    position: 'Graduate Researcher',
-    imageUrl: '/people/phamngocvan.jpg',
-    description: `Phạm Ngọc Vân investigates adversarial reasoning and counterfactual logic in symbolic AI systems. He contributes to interpretable inference pipelines and the robustness of logical agents.`
-  },
-
-  'michael-oduro-antwi': {
-    name: 'Michael Oduro-Antwi',
-    position: 'Graduate Researcher',
-    imageUrl: '/people/michael_oduro_antwi.jpg',
-    description: `Michael focuses on large-scale deployment of reasoning AI into enterprise ecosystems. His current work centers on aligning organizational workflows with logic-based automation for transparency and interpretability.`
-  },
-
-  'dang-kien-nguyen': {
-    name: 'Dang Kien Nguyen',
-    position: 'Affiliated PhD Researcher',
-    imageUrl: '/people/DangKienNguyen.jpg',
-    description: `Dang Kien Nguyen explores symbolic AI for resilient communication systems and logic-enhanced protocol stacks in emerging network architectures. He researches inference mechanisms for adaptive systems in dynamic network conditions.`
+  // ────────────────────────────────────────────────────────────────────────────
+  //  Collaborators & Advisors
+  // ────────────────────────────────────────────────────────────────────────────
+  'dr-le-duy-dung': {
+    name: 'Dr. Le Duy Dung (Andrew)',
+    position: 'Collaborator | Assistant Professor, VinUniversity',
+    imageUrl: '/people/LeDuyDung.jpg',
+    website: 'https://andrew-dungle.github.io',
+    description: `Assistant Professor leading **R2Studio** and **IndoorCare** at VinUniversity; former Senior Data Scientist at Grab. Ph.D. in Data Science & Engineering (SMU). Research: AI‑driven cybersecurity, federated & multimodal learning, robust AI for threat detection. Publications at AAAI, ICML, SIGIR, WWW.`,
   },
 
   'dr-keshav-sood': {
     name: 'Dr. Keshav Sood',
-    position: 'Distinguished Research Fellow (Reasoning in IoT)',
+    position: 'Collaborator | Senior Lecturer, Deakin University',
     imageUrl: '/people/KeshavSood.jpg',
-    description: `Dr. Sood investigates rule-based control in sensor networks and edge reasoning for IoT devices. His research targets embedded rule engines and distributed logic systems for smart environments.`
+    description: `Expert in **SDN security, network privacy, and cyber resilience**. Secured grants from Australian DoD & DFAT; Associate Editor for multiple IEEE journals. Collaborates on PQC and federated security models for critical infrastructure.`,
   },
 
   'dr-syed-wajid-ali-shah': {
     name: 'Dr. Syed Wajid Ali Shah',
-    position: 'Distinguished Research Fellow (Formal Reasoning)',
+    position: 'Collaborator | Research Fellow, Deakin Cyber Research & Innovation Centre',
     imageUrl: '/people/AliShah.jpg',
-    description: `Dr. Shah studies formal logic frameworks and algebraic reasoning for safety-critical AI systems. He contributes to symbolic safety verification and formal methods in machine reasoning.`
-  },
-
-  'thai-mai-thanh': {
-    name: 'Dr. Thai Mai Thanh',
-    position: 'Distinguished Research Fellow (Reasoning in Robotics)',
-    imageUrl: '/people/Thai-Mai-Thanh.png',
-    description: `Dr. Thanh applies symbolic reasoning to robotic control and structured planning. His research involves logic-based decision engines and cognitive task modeling in autonomous systems.`
+    description: `Focuses on **secure cloud computing, privacy‑enhancing tech, and trust frameworks** for distributed systems. Supports lab projects on quantum‑resilient architectures and AI‑driven cybersecurity.`,
   },
 
   'assoc-prof-lei-pan': {
     name: 'Assoc. Prof. Lei Pan',
     position: 'Scientific Advisor | Associate Professor, Deakin University',
     imageUrl: '/people/LeiPan.jpg',
-    description: `Assoc. Prof. Lei Pan provides expertise in algebraic reasoning, logic protocol design, and multi-agent inference. He advises on foundational symbolic models and formal verification in distributed intelligent systems.`
+    description: `Recognised as a top researcher in **Post‑Quantum Cryptography**. Advises on quantum‑resilient protocols, distributed security, and formal verification for trustworthy reasoning AI.`,
   },
 
   'prof-yong-xiang': {
     name: 'Prof. Yong Xiang',
     position: 'Scientific Advisor | Professor of Network Engineering, Deakin University',
     imageUrl: '/people/YongXiang.png',
-    description: `Prof. Xiang leads research on trusted intelligent computing and explainable symbolic inference. He contributes to scalable logic engine designs and secure reasoning frameworks for AI networks.`
-  }
+    description: `Director of the Trustworthy Intelligent Computing Lab. Leads research on **AI‑driven cybersecurity, blockchain security, and network privacy**. Guides scalable, explainable logic engines for secure distributed systems.`,
+  },
 };
 
 export default function TeamMemberPage() {
@@ -150,13 +172,13 @@ export default function TeamMemberPage() {
   const member = teamMembers[slug];
 
   if (!member) {
-    return <div>Team member not found</div>;
+    return <div className="p-8 text-red-600 font-semibold">Team member not found</div>;
   }
 
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-4">{member.name}</h1>
-      <h2 className="text-xl mb-6">{member.position}</h2>
+    <div className="container mx-auto p-6 max-w-5xl">
+      <h1 className="text-3xl font-bold mb-2">{member.name}</h1>
+      <h2 className="text-xl mb-6 text-gray-200">{member.position}</h2>
       <div className="flex flex-col md:flex-row gap-6">
         <div className="w-full md:w-1/3">
           <Image
@@ -164,20 +186,22 @@ export default function TeamMemberPage() {
             alt={member.name}
             width={600}
             height={800}
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg object-cover"
           />
         </div>
-        <div className="w-full md:w-2/3">
-          <p className="mb-4 whitespace-pre-line">{member.description}</p>
+        <div className="w-full md:w-2/3 whitespace-pre-line leading-relaxed text-gray-100">
+          {member.description}
           {member.website && (
-            <a
-              href={member.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
-            >
-              Visit Website
-            </a>
+            <p className="mt-4">
+              <a
+                href={member.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:underline"
+              >
+                Personal Website ↗
+              </a>
+            </p>
           )}
         </div>
       </div>
