@@ -1,3 +1,8 @@
+"use client";
+
+import { usePathname } from 'next/navigation';
+import Image from 'next/image';
+
 const teamMembers = {
   'dr-dinh-duc-nha-nguyen': {
     name: 'Dr. Dinh Duc Nha Nguyen',
@@ -167,4 +172,43 @@ Principal investigator on nine ARC Discovery and Linkage grants, he directs the 
   }
 };
 
-export default function TeamMemberPage() { /* …unchanged… */ }
+export default function TeamMemberPage() {
+  const pathname = usePathname();
+  const slug = pathname.split('/').pop();
+  const member = teamMembers[slug];
+
+  if (!member) {
+    return <div>Team member not found</div>;
+  }
+
+  return (
+    <div className="container mx-auto p-6">
+      <h1 className="text-3xl font-bold mb-4">{member.name}</h1>
+      <h2 className="text-xl mb-6">{member.position}</h2>
+      <div className="flex flex-col md:flex-row gap-6">
+        <div className="w-full md:w-1/3">
+          <Image
+            src={member.imageUrl}
+            alt={member.name}
+            width={600}
+            height={800}
+            className="rounded-lg shadow-lg"
+          />
+        </div>
+        <div className="w-full md:w-2/3">
+          <p className="mb-4 whitespace-pre-line">{member.description}</p>
+          {member.website && (
+            <a
+              href={member.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              Visit Website
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
