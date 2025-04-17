@@ -34,7 +34,7 @@ He heads R2Studio and IndoorCare at VinUniversity, where he designs AI‑powered
     imageUrl: '/people/LuffyLe.jpg',
     description: `Le Vu Anh (Luffy) works on algorithmic reasoning, symbolic inference, and lightweight deterministic reasoning engines. With a background in mathematical logic and physics-informed neural networks, his current focus is on building interpretable reasoning modules for embedded AI systems and scalable symbolic solvers.
 
-His recent work extends into designing scalable AI reasoning systems, drawing on internships at Google Research and MIT where he developed machine‑learning pipelines for scientific computing. Fluent in Python, C++, Haskell, and proof assistants such as Coq and Lean, he bridges formal methods with practical applications.`
+His recent work extends into designing efficient neural operators, drawing on internships at Google Research and MIT, where he developed these pipelines for scientific computing. Fluent in Python, C++, Haskell, and proof assistants such as Coq and Lean, he bridges formal methods with practical applications.`
   },
 
   'van-dong-bui': {
