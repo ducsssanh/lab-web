@@ -1,12 +1,9 @@
-export { notFound } from "next/navigation";
+export { notFound } from 'next/navigation';
 
 export default function PeoplePage() {
   const generateSlug = (name) => {
-    const cleanedName = name.replace(/\(.*\)/, "").trim();
-    return cleanedName
-      .toLowerCase()
-      .replace(/\s+/g, "-")
-      .replace(/[^a-z0-9-]/g, "");
+    const cleanedName = name.replace(/\(.*\)/, '').trim();
+    return cleanedName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
   };
 
   const groups = [
@@ -28,64 +25,7 @@ export default function PeoplePage() {
           name: "Dr. Le Duy Dung (Andrew)",
           role: "Associate Investigator",
           img: "people/LeDuyDung.jpg",
-<<<<<<< HEAD
           about: "Specialist in federated learning and distributed knowledge systems. His recent work explores decentralized symbolic inference and collaborative reasoning among AI agents in edge and cloud environments.",
-=======
-          about:
-            "AI-driven cybersecurity and federated learning researcher. Former Senior Data Scientist at Grab, published in top-tier AI conferences.",
-        },
-      ],
-    },
-    {
-      title: "GRADUATE RESEARCHERS",
-      members: [
-        {
-          name: "Van Dong Bui (Will Bui)",
-          role: "Graduate Researcher",
-          img: "people/will_bui.jpeg",
-          about:
-            "Specialist in cyber threat intelligence, OSINT, and penetration testing. Senior Cybersecurity Analyst at Lynden Group, founder of 'Take Them Down' project.",
-        },
-        {
-          name: "Mai Do Thi Ngoc (Mia Do)",
-          role: "Graduate Researcher",
-          img: "people/MiaDo.jpg",
-          about:
-            "Expert in network security and secure system architecture. 14 years of experience, CEH-certified, and part-time lecturer.",
-        },
-        {
-          name: "Pham Ngoc Van",
-          role: "Graduate Researcher",
-          img: "people/phamngocvan.jpg",
-          about:
-            "Threat Hunting, Malware Analysis, and Security Research with experience in cloud and on-premise security",
-        },
-        {
-          name: "Michael Oduro-Antwi ",
-          role: "Graduate Researcher",
-          img: "people/michael_oduro_antwi.jpg",
-          about:
-            "Results-driven IT leader with over 18 years of experience, passionate about leveraging emerging technologies to build future-ready organizations.",
-        },
-      ],
-    },
-    {
-      title: "MASTER'S STUDENTS",
-      members: [
-        {
-          name: "Le Quoc Dung",
-          role: "Master's student",
-          img: "people/LeQuocDung.jpg",
-          about:
-            "Cryptography expert with a focus on symmetric key encryption and post-quantum security. Gold Medalist in NSUCRYPTO 2024.",
-        },
-        {
-          name: "Nguyen Dinh Cuong",
-          role: "Master's student",
-          img: "people/NguyenDinhCuong.jpg",
-          about:
-            "Researcher in software and system security, automated program analysis, and binary security. Top contestant in CTFs and programming contests.",
->>>>>>> e79e36b (Thay anh chi Mai)
         },
       ],
     },
@@ -171,12 +111,7 @@ export default function PeoplePage() {
           name: "Nguyen Ngoc Tu (Chrish)",
           role: "Research Assistant",
           img: "people/NguyenNgocTu.jpeg",
-<<<<<<< HEAD
           about: "Focuses on CI/CD automation for reasoning model deployment, with expertise in orchestrating logic inference services within scalable cloud-native environments.",
-=======
-          about:
-            "Cloud security and automation expert with hands-on experience in Kubernetes, CI/CD, and infrastructure as code.",
->>>>>>> e79e36b (Thay anh chi Mai)
         },
       ],
     },
@@ -255,12 +190,8 @@ export default function PeoplePage() {
                         {member.name}
                       </h3>
                     </a>
-                    <p className="text-lg text-gray-600 italic">
-                      {member.role}
-                    </p>
-                    <p className="mt-2 text-black text-base leading-relaxed">
-                      {member.about}
-                    </p>
+                    <p className="text-lg text-gray-600 italic">{member.role}</p>
+                    <p className="mt-2 text-black text-base leading-relaxed">{member.about}</p>
                   </div>
                 </div>
               </div>
