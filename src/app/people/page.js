@@ -30,25 +30,8 @@ export default function PeoplePage() {
       ],
     },
     {
-      title: "RESEARCH SCIENTIST",
-      members: [
-        {
-          name: "Vu Anh Le (Luffy Le)",
-          role: "Research Scientist",
-          img: "people/LuffyLe.jpg",
-          about: "Works in algorithmic reasoning and cognitive-inspired symbolic computation. Designing lightweight, deterministic reasoning engines for embedded intelligent systems.",
-        },
-      ],
-    },
-    {
       title: "GRADUATE RESEARCHERS",
       members: [
-        {
-          name: "Van Dong Bui (Will Bui)",
-          role: "Graduate Researcher",
-          img: "people/will_bui.jpeg",
-          about: "Researches intelligent system diagnostics using reasoning-based anomaly detection. Currently exploring OSINT reasoning agents and symbolic interpretability in decision-critical systems.",
-        },
         {
           name: "Mai Do Thi Ngoc (Mia Do)",
           role: "Graduate Researcher",
