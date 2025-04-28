@@ -12,7 +12,7 @@ export default function PeoplePage() {
       members: [
         {
           name: "Dr. Dinh Duc Nha Nguyen (Tony/Nhã)",
-          role: "Principal Investigator, Founder | Assistant Professor, VinUniversity",
+          role: "Principal Investigator, Founder | Assistant Professor, VinUniversity | <a href='https://ducnha.work/'>Profile<a/>",
           img: "people/nha.jpg",
           about: "Leads the lab’s new direction in symbolic AI and reasoning-centric models. His current focus is on building interpretable AI systems that integrate mathematical logic, optimization, and human-aligned reasoning for trustworthy deployment across complex domains.",
         },
