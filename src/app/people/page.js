@@ -123,17 +123,6 @@ export default function PeoplePage() {
       ],
     },
     {
-      title: "AFFILIATED PHD RESEARCHERS",
-      members: [
-        {
-          name: "Dang Kien Nguyen",
-          role: "Affiliated PhD Researcher",
-          img: "people/DangKienNguyen.jpg",
-          about: "Researches symbolic AI architectures for next-generation network interfaces. Explores hybrid protocol stacks enhanced by machine reasoning for resilient and adaptive network behavior.",
-        },
-      ],
-    },
-    {
       title: "DISTINGUISHED RESEARCH FELLOWS",
       members: [
         {

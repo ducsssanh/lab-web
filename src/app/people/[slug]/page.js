@@ -146,12 +146,12 @@ Industry stints at VNCS and DTG Technology saw him deploy enterprise SIEMs, priv
     description: `Michael focuses on large‑scale deployment of reasoning AI into enterprise ecosystems. His current work centers on aligning organizational workflows with logic‑based automation for transparency and interpretability.`,
   },
 
-  "dang-kien-nguyen": {
+  /*"dang-kien-nguyen": {
     name: "Dang Kien Nguyen",
     position: "Affiliated PhD Researcher",
     imageUrl: "/people/DangKienNguyen.jpg",
     description: `Dang Kien Nguyen explores symbolic AI for resilient communication systems and logic‑enhanced protocol stacks in emerging network architectures. He researches inference mechanisms for adaptive systems in dynamic network conditions.`,
-  },
+  },*/
 
   "dr-keshav-sood": {
     name: "Dr. Keshav Sood",
