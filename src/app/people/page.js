@@ -30,6 +30,17 @@ export default function PeoplePage() {
       ],
     },
     {
+      title: "RESEARCH SCIENTISTS",
+      members: [
+        {
+          name: "Vu Anh Le (Luffy Le)",
+          role: "Research Scientist",
+          img: "people/LuffyLe.jpg",
+          about: "Works in algorithmic reasoning and cognitive-inspired symbolic computation. Designing lightweight, deterministic reasoning engines for embedded intelligent systems.",
+        },
+      ],
+    },
+    {
       title: "GRADUATE RESEARCHERS",
       members: [
         {
