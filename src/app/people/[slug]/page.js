@@ -29,14 +29,14 @@ Beyond symbolic AI, Dr. Nguyen is internationally recognized for his contributio
 He heads R2Studio and IndoorCare at VinUniversity, where he designs AI‑powered search, recommendation, and smart‑environment models. His industry experience includes senior data‑science roles on Grab’s Ads & Personalization team and multiple funded projects on secure federated learning and multimodal cyber intelligence. Published in AAAI, ICML, SIGIR, and The Web Conference, he brings production‑scale insight to collaborative reasoning ecosystems.`,
   },
 
-  "vu-anh-le": {
+ /* "vu-anh-le": {
     name: "Le Vu Anh (Luffy)",
     position: "Research Scientist",
     imageUrl: "/people/LuffyLe.jpg",
     description: `Le Vu Anh (Luffy) works on algorithmic reasoning, symbolic inference, and lightweight deterministic reasoning engines. With a background in mathematical logic and physics-informed neural networks, his current focus is on building interpretable reasoning modules for embedded AI systems and scalable symbolic solvers.
 
 His recent work extends into designing efficient neural operators, drawing on internships at Google Research and MIT, where he developed these pipelines for scientific computing. Fluent in Python, C++, Haskell, and proof assistants such as Coq and Lean, he bridges formal methods with practical applications.`,
-  },
+  },*/
 
   "van-dong-bui": {
     name: "Van Dong Bui (Will Bui)",

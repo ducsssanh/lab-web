@@ -30,7 +30,7 @@ export default function PeoplePage() {
         },
       ],
     },
-    {
+    /*{
       title: "RESEARCH SCIENTISTS",
       members: [
         {
@@ -40,7 +40,7 @@ export default function PeoplePage() {
           about: "Works in algorithmic reasoning and cognitive-inspired symbolic computation. Designing lightweight, deterministic reasoning engines for embedded intelligent systems.",
         },
       ],
-    },
+    },*/
     {
       title: "GRADUATE RESEARCHERS",
       members: [
