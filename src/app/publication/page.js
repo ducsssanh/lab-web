@@ -1,8 +1,11 @@
 "use client";
 export { notFound } from "next/navigation";
 import { motion } from "framer-motion";
+import { useTranslation } from "../../hooks/useTranslation";
 
 export default function PublicationsPage() {
+    const { t } = useTranslation();
+    
     const publications = [
         {
             year: 2025,
@@ -100,7 +103,7 @@ export default function PublicationsPage() {
 
     return (
         <div className=" text-[#000022] py-12 flex flex-col justify-center items-start">
-            <h1 className="text-3xl pt-20 mx-auto font-bold">Publications</h1>
+            <h1 className="text-3xl pt-20 mx-auto font-bold">{t("publicationsTitle")}</h1>
 
             <div className="mt-6 mx-auto space-y-8">
                 {publications.map((section, index) => (
@@ -129,7 +132,7 @@ export default function PublicationsPage() {
                                     <p className="text-gray-500 italic">{paper.conference}</p>
                                     <div className="mt-1 space-x-3">
                                         {paper.pdfLink && (
-                                            <a href={paper.pdfLink} className="text-[#c10000]">📄 PDF</a>
+                                            <a href={paper.pdfLink} className="text-[#c10000]">{t("pdf")}</a>
                                         )}
                                     </div>
                                 </motion.li>

@@ -5,11 +5,16 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Script from "next/script"; // Import Script từ Next.js
+import { LanguageProvider } from "../contexts/LanguageContext";
+import LanguageSwitcher from "../components/LanguageSwitcher";
+import LanguagePopup from "../components/LanguagePopup";
+import { useTranslation } from "../hooks/useTranslation";
 
 export { notFound } from "next/navigation";
 
-export default function Layout({ children }) {
+function LayoutContent({ children }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -21,6 +26,14 @@ export default function Layout({ children }) {
       gtag("config", "G-9FL93G3YHV");
     }
   }, []);
+
+  const menuItems = [
+    { key: "home", href: "/", label: t("home") },
+    { key: "people", href: "/people", label: t("people") },
+    { key: "publications", href: "/publication", label: t("publications") },
+    { key: "joinUs", href: "/join-us", label: t("joinUs") },
+    { key: "contact", href: "/contact", label: t("contact") },
+  ];
 
   return (
     <html lang="en">
@@ -39,83 +52,62 @@ export default function Layout({ children }) {
           `}
         </Script>
 
+        {/* Language Popup */}
+        <LanguagePopup />
+
+        {/* Language Switcher - Fixed Position */}
+        <div className="fixed top-4 right-4 z-50">
+          <LanguageSwitcher />
+        </div>
+
         {/* Navbar */}
-        <nav className="fixed w-full top-0 z-50 bg-white px-6 shadow-md">
-          <div className="max-w-6xl mx-auto flex justify-between items-center">
+        <nav className="fixed w-full top-0 z-40 bg-white px-6 shadow-md">
+          <div className="max-w-7xl mx-auto flex flex-row items-center h-20">
             {/* Logo */}
-            <Link href="/" onClick={() => setMenuOpen(false)}>
+            <Link href="/" onClick={() => setMenuOpen(false)} className="flex-shrink-0">
               <img
                 src="/logo.jpg"
                 alt="Vcyber Logo"
                 className="w-80 h-20 object-cover transition-all duration-300"
               />
             </Link>
-
-            {/* Menu Button (Mobile) */}
-            <button
-              className="lg:hidden text-[#191938]"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              {menuOpen ? <X size={28} /> : <Menu size={28} />}
-            </button>
-
-            {/* Desktop Menu */}
-            <ul className="hidden lg:flex text-xl space-x-20">
-              {["Home", "People", "Publications", "Join Us", "Contact"].map(
-                (item, index) => {
-                  const formattedItem =
-                    item === "Home"
-                      ? "/"
-                      : item === "Join Us"
-                      ? "/join-us"
-                      : `/${item
-                          .toLowerCase()
-                          .replace(/s$/, "")
-                          .replace(" ", "-")}`;
-
-                  return (
-                    <li key={index}>
-                      <Link
-                        href={formattedItem}
-                        className="text-[#000022] relative after:absolute after:left-0 after:bottom-[-6px] after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
-                      >
-                        {item}
-                      </Link>
-                    </li>
-                  );
-                }
-              )}
+            {/* Menu - Desktop */}
+            <ul className="hidden lg:flex flex-row items-center text-xl space-x-16 ml-8 flex-nowrap">
+              {menuItems.map((item) => (
+                <li key={item.key}>
+                  <Link
+                    href={item.href}
+                    className="text-[#000022] relative after:absolute after:left-0 after:bottom-[-6px] after:w-full after:h-[3px] after:bg-[#f40000] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 whitespace-nowrap"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
+            {/* Hamburger - Mobile */}
+            <div className="lg:hidden ml-auto flex items-center">
+              <button
+                className="text-[#191938]"
+                onClick={() => setMenuOpen(!menuOpen)}
+              >
+                {menuOpen ? <X size={28} /> : <Menu size={28} />}
+              </button>
+            </div>
           </div>
-
           {/* Mobile Menu */}
           {menuOpen && (
             <ul className="lg:hidden mt-4 p-4 space-y-3 rounded-lg">
-              {["Home", "People", "Publications", "Join Us", "Contact"].map(
-                (item, index) => {
-                  const formattedItem =
-                    item === "Home"
-                      ? "/"
-                      : item === "Join Us"
-                      ? "/join-us"
-                      : `/${item
-                          .toLowerCase()
-                          .replace(/s$/, "")
-                          .replace(" ", "-")}`;
-
-                  return (
-                    <li key={index}>
-                      <Link
-                        href={formattedItem}
-                        className="block text-[#000022]"
-                        onClick={() => setMenuOpen(false)}
-                      >
-                        {item}
-                      </Link>
-                    </li>
-                  );
-                }
-              )}
+              {menuItems.map((item) => (
+                <li key={item.key}>
+                  <Link
+                    href={item.href}
+                    className="block text-[#000022]"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           )}
         </nav>
@@ -134,11 +126,11 @@ export default function Layout({ children }) {
                 className="w-32 mb-4 mx-auto md:mx-0"
               />
               <p className="text-sm">
-                Copyright © {new Date().getFullYear()} vcyber.
+                {t("copyright")} {new Date().getFullYear()} vcyber.
               </p>
-              <p className="text-sm">All Rights Reserved.</p>
+              <p className="text-sm">{t("allRightsReserved")}</p>
               <a href="/privacy-policy" className="text-sm underline">
-                Privacy Policy
+                {t("privacyPolicy")}
               </a>
             </div>
 
@@ -147,29 +139,29 @@ export default function Layout({ children }) {
               <ul className="space-y-2">
                 <li>
                   <Link href="/" className="hover:underline">
-                    Home
+                    {t("home")}
                   </Link>
                 </li>
                 <li>
                   <Link href="/people" className="hover:underline">
-                    People
+                    {t("people")}
                   </Link>
                 </li>
               </ul>
               <ul className="space-y-2">
                 <li>
                   <Link href="/publication" className="hover:underline">
-                    Publications
+                    {t("publications")}
                   </Link>
                 </li>
                 <li>
                   <Link href="/join-us" className="hover:underline">
-                    Join us
+                    {t("joinUs")}
                   </Link>
                 </li>
                 <li>
                   <Link href="/contact" className="hover:underline">
-                    Contact
+                    {t("contact")}
                   </Link>
                 </li>
               </ul>
@@ -186,5 +178,13 @@ export default function Layout({ children }) {
         </footer>
       </body>
     </html>
+  );
+}
+
+export default function Layout({ children }) {
+  return (
+    <LanguageProvider>
+      <LayoutContent>{children}</LayoutContent>
+    </LanguageProvider>
   );
 }
