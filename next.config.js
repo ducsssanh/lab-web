@@ -6,6 +6,10 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  devIndicators: {
+    buildActivity: false,
+    buildActivityPosition: 'bottom-right',
+  },
 };
 
 module.exports = nextConfig;

@@ -1,27 +1,30 @@
+"use client";
 export { notFound } from "next/navigation";
 import { FaUniversity, FaPhone, FaEnvelope } from "react-icons/fa";
+import { useTranslation } from "../../hooks/useTranslation";
 
 export default function ContactPage() {
+  const { t } = useTranslation();
+  
   return (
     <div className="min-h-screen flex items-center justify-center py-20 px-4">
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Thông tin liên hệ */}
         <div className="flex flex-col justify-center text-center md:ml-20 md:text-left">
-          <h1 className="text-5xl font-bold text-[#191938]">Contact us</h1>
-          <p className="mt-2 text-gray-600">Get in touch with our team.</p>
+          <h1 className="text-5xl font-bold text-[#191938]">{t("contactUs")}</h1>
+          <p className="mt-2 text-gray-600">{t("getInTouch")}</p>
           <h2 className="text-3xl pt-5 text-[#191938]">
-            Dr. Nguyen Dinh Duc Nha (Tony)
+            {t("drNguyenDinhDucNha")}
           </h2>
 
           <div className="mt-6 space-y-4">
             <p className="text-lg flex items-center gap-2">
               <FaUniversity size={35} />
-              VinUniversity, 4th Floor, Building I, VinUni Campus, Vinhomes
-              Ocean Park, Gia Lam Dist, Hanoi
+              {t("vinUniversityAddress")}
             </p>
             <p className="text-lg flex items-center gap-2">
               <FaPhone/>
-              Contact: (+84) 0369 7777 13
+              {t("contactPhone")}
             </p>
             <p className="text-lg flex items-center gap-2">
               <FaEnvelope/>
