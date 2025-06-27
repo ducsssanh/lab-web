@@ -55,11 +55,6 @@ function LayoutContent({ children }) {
         {/* Language Popup */}
         <LanguagePopup />
 
-        {/* Language Switcher - Fixed Position */}
-        <div className="fixed top-4 right-4 z-50">
-          <LanguageSwitcher />
-        </div>
-
         {/* Navbar */}
         <nav className="fixed w-full top-0 z-40 bg-white px-6 shadow-md">
           <div className="max-w-7xl mx-auto flex flex-row items-center h-20">
@@ -112,8 +107,13 @@ function LayoutContent({ children }) {
           )}
         </nav>
 
+        {/* Language Switcher - Below Navbar */}
+        <div className="fixed top-20 right-4 z-30">
+          <LanguageSwitcher />
+        </div>
+
         {/* Nội dung chính */}
-        <main className="flex-grow pt-20 px-4">{children}</main>
+        <main className="flex-grow pt-24 px-4">{children}</main>
 
         {/* Footer */}
         <footer className="relative bg-[#c10000] text-white py-10 px-6 text-center sm:text-left">

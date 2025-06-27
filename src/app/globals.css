@@ -35,13 +35,35 @@ body {
 /* Language selector styles */
 .language-selector {
   position: fixed;
-  top: 16px;
+  top: 80px;
   right: 16px;
-  z-index: 1000;
+  z-index: 30;
   background: #fff;
-  padding: 6px 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 8px 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 1px solid #e5e7eb;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.language-selector:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transform: translateY(-1px);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .language-selector {
+    top: 70px;
+    right: 12px;
+    padding: 6px 8px;
+  }
+  
+  .lang-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
 }
 
 .lang-btn {
@@ -55,16 +77,22 @@ body {
   font-weight: bold;
   transition: all 0.3s ease;
   margin: 0 2px;
+  white-space: nowrap;
+  min-width: 32px;
+  text-align: center;
 }
 
 .lang-btn.active {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
 }
 
 .lang-btn:hover {
   background-color: #0056b3;
   border-color: #0056b3;
   color: white;
+  transform: scale(1.02);
 }
